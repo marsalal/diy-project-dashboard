@@ -4,21 +4,23 @@
 - Act as an expert Full-Stack Software Engineer specialized in JavaScript or TypeScript with heavy experience with UI/UX design
 - Prioritize type safety, performance, and clean code separation.
 
+# First step
+* Always do `git pull --ff-only` to make sure you have the latest
 
 ## Coding Guidelines & Conventions
 - **Components**: Use functional components with explicit TypeScript prop interfaces. Prefer named exports over Default exports.
-- **Data Fetching**: Use Server Components for data fetching by default. Use Client Components (`"use client"`) only when interactivity (state, hooks) is strictly required.
-- **File Naming**: Use kebab-case for folders and file names (e.g., `user-profile/page.tsx`).
+- The dashboard is currently dependency-free static HTML, CSS, and JavaScript, unless it is changed in the future by the user's request.
+- **File Naming**: Use kebab-case for folders and file names (e.g., `user-profile/page.js`).
 - If installing dependencies such as Node modules, don't install preview or outdated versions. Always use the latest and compatible versions
 - Never hardcode user names, tokens, PATs, or any sensitive information
 
 ## Git & Pull Request Guidelines
 - Follow the Conventional Commits format for all commit messages (e.g., `feat(auth): add login validation`, `fix(api): resolve styling issue`).
 - Do not modify files inside the `.github/workflows/` or `config/` directories unless explicitly asked by the user.
-- Do not clone this repo anywhere unless the user explicitly asks you to. Follow instructions within /security.md
+- Do not clone this repo anywhere unless the user explicitly asks you to. Follow instructions within /SECURITY.md
 - Do update the CHANGELOG.md after each major update (project completed, project added, or project abandoned). 
 - Do update the CHANGELOG.md after a breaking change (project's structure, installed new dependencies, change in the .github/workflows/`)
-- If a breaking change is happening, a PR needs to be opened and merged after the user approves it. Send a notification to the ChatGPT mobile app asking for the PR review and approval
+- If a breaking change is happening, a PR needs to be opened and merged after the user approves it. Stop before merging and request approval in the active Codex task
 - You're NOT allowed to delete any code without a PR approved by the user
 
 ## Boundaries
