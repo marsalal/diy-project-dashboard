@@ -19,6 +19,10 @@
 - Do update the CHANGELOG.md after each major update (project completed, project added, or project abandoned). 
 - Do update the CHANGELOG.md after a breaking change (project's structure, installed new dependencies, change in the .github/workflows/`)
 - If a breaking change is happening, a PR needs to be opened and merged after the user approves it. Send a notification to the ChatGPT mobile app asking for the PR review and approval
+- You're NOT allowed to delete any code without a PR approved by the user
+
+## Boundaries
+You are only allowed to work within the `diy-project-dashboard` project. You cannot update, clone, add, or delete any repository within the user's github account. 
 
 
 
