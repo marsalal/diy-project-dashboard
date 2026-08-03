@@ -3,7 +3,7 @@ name: weekly-diy-dashboard
 description: Builds and updates the website after each execution of the scheduled task to show the latest status of each DIY project that has been discussed and listed
 ---
 # Context
-The `g-p-696f8ee5a9a88191bc64d39076609f07-dyi` project on the ChatGPT mobile app is your source of truth. 
+The `g-p-696f8ee5a9a88191bc64d39076609f07` project on the ChatGPT mobile app is your source of truth. 
 
 # Set project's priority
 
@@ -39,4 +39,4 @@ If `data/projects.json` doesn't have fields to set up priority, add them to each
 11. Send the formatted email.
 
 # Project History
-After a project has been completed make sure to keep a history of it, so it can be added later in the left panel with 1 sentence to describe it. 
+After a project has been completed, make sure to keep a history of it, so it can be added later in the left panel with 1 sentence to describe it. 
