@@ -14,6 +14,7 @@ All meaningful dashboard changes are recorded here using explicit dates and desc
 - Quantified materials, tools, labor estimates, cost ranges, assumptions, and source links.
 - JSON validation workflow and GitHub Pages deployment workflow.
 - Repository scope controls through `.gitignore`, validation, and `SECURITY.md`.
+- Public GitHub Pages deployment at `https://marsalal.github.io/diy-project-dashboard/`.
 
 ### Project data
 
@@ -22,4 +23,3 @@ All meaningful dashboard changes are recorded here using explicit dates and desc
 - Added guanacaste slab tables at 35% estimated completion.
 - Added Adirondack garden corner at 20% estimated completion.
 - Recorded smart-switch replacement as completed on 2026-08-01.
-

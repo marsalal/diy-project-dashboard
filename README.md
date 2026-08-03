@@ -4,7 +4,7 @@ A public, read-only dashboard for tracking active home projects, recent completi
 
 ## Live dashboard
 
-The GitHub Pages URL will appear here after the first deployment.
+https://marsalal.github.io/diy-project-dashboard/
 
 ## Current focus
 
@@ -27,6 +27,7 @@ The weekly automation reviews the approved DIY planner context. When project con
 - Identified the concrete pad as the current project and the guanacaste tables as the recommended next project.
 - Added automated validation and GitHub Pages deployment workflows.
 - Added repository hygiene and security documentation.
+- Published the validated dashboard through free GitHub Pages at the URL above.
 
 ## Repository boundaries
 
@@ -35,4 +36,3 @@ Only dashboard-related source, data, validation, documentation, and deployment f
 ## Cost and safety notice
 
 Prices are planning estimates in Costa Rican colones and should be reconfirmed before purchase. Structural, electrical, and other safety-sensitive decisions should be verified for the actual site conditions and applicable local requirements.
-
