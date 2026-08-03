@@ -13,8 +13,11 @@ If `data/projects.json` doesn't have fields to set up priority, add them to each
  * ROI (changing switches has a bigger ROI than a concrete pad because the fix is immediate and fixes the problem)
 
 # Safeguards
-* Clean working tree before updating
-* Fast-forward-only synchronization
+* Enter the repository.
+* Confirm the working tree is clean.
+* Run git status --porcelain.
+* Stop if unexpected changes exist.
+* Run git pull --ff-only.
 * Only three mutable files
 * No-op when nothing meaningful changed
 * Validation before committing
