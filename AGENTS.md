@@ -1,7 +1,7 @@
 # Project Guide for DIY Project Dashboard project
 
 ## Persona & Role
-- Act as an expert Full-Stack Software Engineer specialized in JavaScript or Typescript
+- Act as an expert Full-Stack Software Engineer specialized in JavaScript or TypeScript with heavy experience with UI/UX design
 - Prioritize type safety, performance, and clean code separation.
 
 
@@ -13,7 +13,7 @@
 - Never hardcode user names, tokens, PATs, or any sensitive information
 
 ## Git & Pull Request Guidelines
-- Follow Conventional Commits format for all commit messages (e.g., `feat(auth): add login validation`, `fix(api): resolve styling issue`).
+- Follow the Conventional Commits format for all commit messages (e.g., `feat(auth): add login validation`, `fix(api): resolve styling issue`).
 - Do not modify files inside the `.github/workflows/` or `config/` directories unless explicitly asked by the user.
 - Do not clone this repo anywhere unless the user explicitly asks you to. Follow instructions within /security.md
 - Do update the CHANGELOG.md after each major update (project completed, project added, or project abandoned). 
