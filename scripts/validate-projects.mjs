@@ -1,5 +1,5 @@
 import fs from "node:fs";
-const requiredFiles=["README.md","CHANGELOG.md","SECURITY.md",".gitignore","index.html","assets/styles.css","assets/dashboard.js","data/projects.json",".github/workflows/validate.yml",".github/workflows/deploy-pages.yml"];
+const requiredFiles=["AGENTS.md",".agents/skills/weekly-diy-dashboard/SKILL.md",".agents/skills/website-designer/SKILL.md","README.md","CHANGELOG.md","SECURITY.md",".gitignore","index.html","assets/styles.css","assets/dashboard.js","data/projects.json",".github/workflows/validate.yml",".github/workflows/deploy-pages.yml"];
 const forbiddenPatterns=[/\b[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}\b/i,/\/Users\//,/ghp_[A-Za-z0-9]+/,/github_pat_[A-Za-z0-9_]+/,/BEGIN (RSA |OPENSSH )?PRIVATE KEY/];
 for(const file of requiredFiles){if(!fs.existsSync(file))throw new Error(`Missing required file: ${file}`)}
 const data=JSON.parse(fs.readFileSync("data/projects.json","utf8"));
