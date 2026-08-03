@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Marco's DIY project dashboard with progress, tasks, quantified materials, tools, labor, and Costa Rica cost estimates.">
+  <title>DIY Project Dashboard</title>
+  <link rel="stylesheet" href="assets/styles.css">
+  <script src="assets/dashboard.js" defer></script>
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-inner">
+      <p class="eyebrow">Weekly DIY brief</p>
+      <h1>Your home-project dashboard</h1>
+      <p id="updated" class="hero-meta">Loading current plan…</p>
+    </div>
+  </header>
+  <main class="wrap">
+    <section class="focus-grid" aria-label="Project focus">
+      <article class="focus current"><span>Current project</span><h2 id="current-project">Loading…</h2></article>
+      <article class="focus next"><span>Recommended next</span><h2 id="next-project">Loading…</h2></article>
+    </section>
+    <section class="completed" aria-labelledby="completed-heading">
+      <p class="eyebrow">Completed in the last 2 weeks</p>
+      <div id="completed-list"><h2 id="completed-heading">Loading…</h2></div>
+    </section>
+    <div class="section-head">
+      <div><h2>Active projects</h2><p>Select a project to reveal quantified materials, tools, assumptions, and next steps.</p></div>
+      <span id="active-count"></span>
+    </div>
+    <section id="projects" class="projects" aria-live="polite"></section>
+    <section class="notice"><strong>Planning and safety note</strong><p>Quantities and prices are planning estimates. Confirm current Costa Rica pricing, actual site measurements, product instructions, structural requirements, and safety-sensitive work before purchasing or construction.</p></section>
+    <p id="load-error" class="error" hidden>The dashboard data could not be loaded. Please retry shortly.</p>
+  </main>
+  <footer>Public read-only dashboard · No tracking, cookies, forms, or personal data</footer>
+</body>
+</html>
+

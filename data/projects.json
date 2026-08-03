@@ -1,0 +1,112 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-08-03",
+  "currency": "CRC",
+  "currentProjectId": "concrete-pad",
+  "nextProjectId": "guanacaste-tables",
+  "completed": [
+    {
+      "name": "Smart-switch replacement",
+      "completedAt": "2026-08-01",
+      "summary": "Replacement and reconnection work marked complete."
+    }
+  ],
+  "projects": [
+    {
+      "id": "concrete-pad",
+      "name": "Concrete pad & garden transition",
+      "status": "Planning",
+      "progress": 25,
+      "labor": "8–12 h for the pad; 4–8 additional h for steps",
+      "cost": "₡35.000–₡110.000 remaining",
+      "assumption": "Pad quantities assume 2.00 × 1.60 × 0.10 m. Step quantities remain pending until the 3.80 m transition's vertical rise is measured.",
+      "nextTasks": [
+        "Measure the vertical rise across the 3.80 m transition.",
+        "Confirm drainage, finished slope, and compacted base depth.",
+        "Inspect all three stored Holcim bags and reject moisture-damaged or hardened cement.",
+        "Choose poured or precast steps after the rise and leftover inventory are known."
+      ],
+      "materials": [
+        {"item":"General-purpose cement","quantity":"3 × 50 kg bags on hand","note":"Approximately enough for the 0.35 m³ target; a fourth bag is contingency only."},
+        {"item":"Clean construction sand","quantity":"0.18 m³ net; purchase ~0.20 m³","note":"Planning allowance for a nominal 1:2:3 batch."},
+        {"item":"Clean gravel/rock","quantity":"0.27 m³ net; purchase ~0.30 m³","note":"Confirm aggregate size is appropriate for a 10 cm slab."},
+        {"item":"Clean water","quantity":"Up to 70–75 L","note":"Add gradually; wet aggregate reduces required water."},
+        {"item":"Form lumber","quantity":"7.2 linear m","note":"Two 2.0 m sides plus two 1.6 m sides; three ~3 m boards can be cut to fit."},
+        {"item":"Wood stakes","quantity":"8–10","note":"Approximately 40–50 cm each."},
+        {"item":"Exterior form screws","quantity":"1 box, about 50","note":"Easier removal than nails."},
+        {"item":"Reinforcement","quantity":"1 mesh sheet covering ≥3.2 m² or ~30 m of #3 bar","note":"About five 6 m bars for a provisional ~30 cm grid; verify actual requirements."},
+        {"item":"Rebar ties and chairs","quantity":"1 small tie roll and 12–16 chairs","note":"Keep reinforcement supported within the slab."},
+        {"item":"Granular base","quantity":"~0.35–0.50 m³ provisional","note":"Measure excavation and existing soil before purchase."},
+        {"item":"Curing plastic","quantity":"1 sheet, at least 3 × 3 m","note":"An appropriate curing compound is an alternative."}
+      ],
+      "tools": ["1 wheelbarrow","1 mixer or heavy-duty mixing tub","2 shovels and 1 hoe","1 hand tamper or rented plate compactor","1 screed board at least 2.2 m long","1 concrete float","1 finishing trowel","1 edger and 1 groover","Level, tape, string or laser level, gloves, boots, eye protection, and dust protection"],
+      "sources": [{"label":"Grupo Puma concrete yield reference","url":"https://www.grupopuma.com/es-CR/productos/ver/paviland-concreto-multiuso-tipo-a-cr-es"}]
+    },
+    {
+      "id": "wpc-wall",
+      "name": "Office WPC feature wall",
+      "status": "Planned",
+      "progress": 15,
+      "labor": "8–12 h",
+      "cost": "₡78.000–₡145.000 remaining",
+      "assumption": "Panel count depends on the selected product's effective coverage width and final foliage boundary.",
+      "nextTasks": ["Confirm the panel sample and effective coverage width.","Cut panels to 2.50 m.","Install the first panel perfectly level.","Cut around three electrical points and finish the edges."],
+      "materials": [
+        {"item":"WPC wall panels","quantity":"15–16 panels × 2.90 m","note":"Final count depends on effective coverage."},
+        {"item":"Panel clips","quantity":"30–32","note":"Approximately two per panel for this interior installation."},
+        {"item":"Concrete screws","quantity":"50 × #8, 1½–2 in","note":"Hide in panel grooves where possible."},
+        {"item":"6 mm wall plugs","quantity":"50","note":"Match the screw and wall condition."},
+        {"item":"Construction adhesive","quantity":"4–6 cartridges","note":"Confirm coverage for the selected product."},
+        {"item":"Finish/profile trim","quantity":"~3 m","note":"For the WPC and foliage transition."},
+        {"item":"Outlet box extenders","quantity":"Up to 3","note":"Use only if panel depth recesses the devices."},
+        {"item":"Cutting blades","quantity":"1–2 fine-tooth blades and 2–3 multi-tool blades","note":"Use WPC/PVC-compatible blades."}
+      ],
+      "tools": ["Circular saw with guide or jigsaw","Milwaukee Multi-Tool","Hammer drill and 6 mm masonry bit","Long level","Caulking gun","Tape, square, pencil, and PPE"],
+      "sources": [{"label":"San Jue Costa Rica WPC reference","url":"https://sanjuecostarica.com/"},{"label":"Novex WPC panel reference","url":"https://novex.cr/producto/465991/panel-decorativo-wpc-de-pared-16-x-23-cm-x-290-m-artic-oak.html"}]
+    },
+    {
+      "id": "guanacaste-tables",
+      "name": "Guanacaste slab tables",
+      "status": "Wood stabilized",
+      "progress": 35,
+      "labor": "8–14 h plus curing time",
+      "cost": "₡45.000–₡110.000 remaining",
+      "assumption": "The ordered sander is excluded from remaining cost. Final epoxy consumption depends on voids revealed after 120-grit sanding.",
+      "nextTasks": ["Sand the underside at 80 then 120 grit.","Inspect flatness, cracks, and loose bark.","Clean and stabilize voids with clear epoxy.","Sand 180 then 220 grit, apply satin finish, and install legs."],
+      "materials": [
+        {"item":"Clear epoxy","quantity":"1 × 1 L kit","note":"Expected use is approximately 250–500 ml across both slabs."},
+        {"item":"Sanding discs","quantity":"5–8 each in 80, 120, 180, and 220 grit","note":"Approximately 20–32 discs total."},
+        {"item":"Mixing cups and sticks","quantity":"6–10 sets","note":"Graduated cups preferred."},
+        {"item":"Nitrile gloves","quantity":"At least 10 pairs","note":"Change contaminated gloves promptly."},
+        {"item":"Painter's tape and dam material","quantity":"1 roll plus plastic sheet","note":"Contain epoxy pours."},
+        {"item":"Satin wood finish","quantity":"1 quart, approximately 0.95 L","note":"Confirm compatibility with the selected epoxy system."},
+        {"item":"Applicators","quantity":"3–5 foam pads or brushes","note":"Include tack cloths."},
+        {"item":"Table legs","quantity":"2 sets of 3–4 legs","note":"Confirm height and load rating."}
+      ],
+      "tools": ["Milwaukee orbital sander and dust extraction","Shop vacuum","Heat gun used cautiously","Drill/driver and pilot bits","Scrapers or chisels, straightedge, respirator, and eye protection"],
+      "sources": [{"label":"EPA Costa Rica clear epoxy reference","url":"https://cr.epaenlinea.com/resina-epoxica-arti-sur-transparente-1-litro.html"}]
+    },
+    {
+      "id": "adirondack-corner",
+      "name": "Adirondack garden corner",
+      "status": "Design selected",
+      "progress": 20,
+      "labor": "2–3 h for chairs; 1–2 days for the full corner",
+      "cost": "₡275.000–₡350.000 remaining",
+      "assumption": "Stepping-stone and bedding-sand quantities remain pending until the path spacing and stone dimensions are selected.",
+      "nextTasks": ["Inspect and test one assembled chair.","Buy and assemble two teak kits.","Lay out the stepping-stone route.","Finalize the round guanacaste table and warm lighting."],
+      "materials": [
+        {"item":"Teak Adirondack chair kits","quantity":"2","note":"Quoted at ₡100.000 each, unassembled."},
+        {"item":"Stainless hardware","quantity":"2 complete packs","note":"Verify that both kits include all fasteners."},
+        {"item":"Exterior teak oil or sealer","quantity":"1 quart if unfinished","note":"Skip if the seller confirms a completed exterior finish."},
+        {"item":"Stepping stones","quantity":"Pending route spacing","note":"Measure the path and divide by selected center spacing."},
+        {"item":"Bedding sand","quantity":"Pending stone size and count","note":"Use a thin, leveled bed."},
+        {"item":"Round guanacaste tabletop","quantity":"1 × 60–70 cm diameter","note":"Confirm source and thickness."},
+        {"item":"Exterior table base","quantity":"1 set","note":"Use exterior-rated coating and hardware."},
+        {"item":"Warm path lights","quantity":"4–6 provisional","note":"Confirm spacing and power method."}
+      ],
+      "tools": ["Drill/driver with clutch","Hand screwdriver or hex keys","Level and tape","Rubber mallet","Shovel, rake, and hand tamper"],
+      "sources": []
+    }
+  ]
+}
