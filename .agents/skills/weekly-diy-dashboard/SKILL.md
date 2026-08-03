@@ -18,7 +18,6 @@ If `data/projects.json` doesn't have fields to set up priority, add them to each
 * Run git status --porcelain.
 * Stop if unexpected changes exist.
 * Run git pull --ff-only.
-* Only three mutable files
 * No-op when nothing meaningful changed
 * Validation before committing
 * Changelog and README updates
