@@ -3,18 +3,25 @@ name: weekly-diy-dashboard
 description: Builds and updates the website after each execution of the scheduled task to show the latest status of each DIY project that has been discussed and listed
 ---
 # Context
-The `DIY` project on the ChatGPT mobile app is your source of truth. 
+The `g-p-696f8ee5a9a88191bc64d39076609f07-dyi` project on the ChatGPT mobile app is your source of truth. 
 
 # Set project's priority
+
+If `data/projects.json` doesn't have fields to set up priority, add them to each one of the projects at this moment. So we can set a priority based on the criteria below.
 
 1. Projects must have a priority where it's considered the following:
  * ROI (changing switches has a bigger ROI than a concrete pad because the fix is immediate and fixes the problem)
 
-# Set project's tags
-Available tags:
-
-* Complexity (hard, medium, easy). Based on the project's tasks, tools, and hours estimated to take
-* Rental, if I need to rent equipment like a concrete mixer or a floor polisher
+# Safeguards
+* Clean working tree before updating
+* Fast-forward-only synchronization
+* Only three mutable files
+* No-op when nothing meaningful changed
+* Validation before committing
+* Changelog and README updates
+* Deployment verification
+* Public-data restrictions
+* When GitHub or deployment is unavailable, don't force it and send an email to the user informing of the failure
 
 # Update project's status
 
