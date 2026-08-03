@@ -19,6 +19,13 @@ The weekly automation reviews the approved DIY planner context. When project con
 
 ## Latest changes
 
+### 2026-08-03 — Project studio redesign
+
+- Reworked the dashboard into a responsive studio layout with Overview, Projects, Materials, and History views.
+- Applied a cool neutral Material-inspired palette with graphite, blue-gray, soft gray, and clay accents.
+- Added a priority-ordered project flow and one combined cross-project materials list.
+- Preserved every detailed planning field in expandable project sections.
+
 ### 2026-08-03 — Priority and history navigation
 
 - Added a validated priority model using ROI, complexity, tool readiness, and explicit ranking reasons.

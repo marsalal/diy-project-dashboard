@@ -2,6 +2,18 @@
 
 All meaningful dashboard changes are recorded here using explicit dates and descriptions.
 
+## 2026-08-03 — Project studio redesign
+
+### Changed
+
+- Replaced the original hero-and-card layout with a responsive project-studio workspace.
+- Adopted a cooler neutral palette using graphite, soft gray, desaturated blue-gray, and a restrained clay accent.
+- Added functional Overview, Projects, Materials, and History navigation.
+- Added a project-flow board ordered by priority and a prominent weekly-focus summary.
+- Preserved expandable project plans with quantified materials, tools, labor, costs, assumptions, next steps, and sources.
+- Added a combined materials table spanning every active project.
+- Moved completed work into a dedicated history view.
+
 ## 2026-08-03 — Priority and history navigation
 
 ### Added

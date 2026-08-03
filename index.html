@@ -3,43 +3,48 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Marco's DIY project dashboard with progress, tasks, quantified materials, tools, labor, and Costa Rica cost estimates.">
-  <title>DIY Project Dashboard</title>
-  <link rel="stylesheet" href="assets/styles.css?v=20260803-2">
-  <link rel="stylesheet" href="assets/dashboard-ui.css?v=20260803-2">
-  <script src="assets/dashboard.js?v=20260803-2" defer></script>
+  <meta name="description" content="A calm project studio for tracking DIY priorities, materials, costs, tools, and completed work.">
+  <meta name="theme-color" content="#252b2d">
+  <title>DIY Project Studio</title>
+  <link rel="stylesheet" href="assets/styles.css?v=20260803-3">
+  <link rel="stylesheet" href="assets/dashboard-ui.css?v=20260803-3">
+  <script src="assets/dashboard.js?v=20260803-3" defer></script>
 </head>
 <body>
-  <button id="history-toggle" class="history-toggle" type="button" aria-controls="history-panel" aria-expanded="false"><span aria-hidden="true">☰</span> Project history</button>
-  <div id="history-backdrop" class="history-backdrop" hidden></div>
-  <aside id="history-panel" class="history-panel" aria-labelledby="history-heading" aria-hidden="true">
-    <button id="history-close" class="history-close" type="button" aria-label="Close project history">×</button>
-    <p class="eyebrow">Completed projects</p>
-    <h2 id="history-heading">Project history</h2>
-    <div id="history-list"><p>Loading…</p></div>
-  </aside>
-  <header class="hero">
-    <div class="hero-inner">
-      <p class="eyebrow">Weekly DIY brief</p>
-      <h1>Your home-project dashboard</h1>
-      <p id="updated" class="hero-meta">Loading current plan…</p>
-    </div>
+  <header class="appbar">
+    <a class="brand" href="#overview" aria-label="DIY Planner overview"><span class="brandmark" aria-hidden="true">D</span><span>DIY Planner</span></a>
+    <p id="updated" class="updated">Loading current plan…</p>
+    <span class="avatar" aria-hidden="true">DIY</span>
   </header>
-  <main class="wrap">
-    <section class="focus-grid" aria-label="Project focus">
-      <article class="focus current"><span>Current project</span><h2 id="current-project">Loading…</h2></article>
-      <article class="focus next"><span>Recommended next</span><h2 id="next-project">Loading…</h2></article>
+  <aside class="sidebar" aria-label="Workspace navigation">
+    <p class="nav-label">Workspace</p>
+    <nav>
+      <button class="nav-item active" type="button" data-panel="overview" aria-current="page">Overview</button>
+      <button class="nav-item" type="button" data-panel="projects">Projects</button>
+      <button class="nav-item" type="button" data-panel="materials">Materials</button>
+      <button class="nav-item" type="button" data-panel="history">History</button>
+    </nav>
+  </aside>
+  <main class="main">
+    <section id="overview" class="panel active" aria-labelledby="overview-title">
+      <div class="page-head"><div><p class="eyebrow">Weekly DIY brief</p><h1 id="overview-title">Project studio</h1><p>Plan the work, see what is moving, and keep momentum.</p></div><span id="active-count" class="pill">Loading…</span></div>
+      <section id="focus" class="focus" aria-label="Current project"></section>
+      <div class="section-head"><h2>Project flow</h2><span>Ordered by priority</span></div>
+      <section id="project-flow" class="board" aria-label="Project workflow"></section>
     </section>
-    <div class="section-head">
-      <div><h2>Top 3 priorities</h2><p>Your current project followed by the two highest-priority projects. Scores are out of 100; a higher score means tackle it sooner.</p></div>
-    </div>
-    <section id="top-projects" class="top-projects" aria-label="Top three project priorities"></section>
-    <div class="section-head">
-      <div><h2>Active projects</h2><p>Select a project to reveal quantified materials, tools, assumptions, and next steps.</p></div>
-      <span id="active-count"></span>
-    </div>
-    <section id="projects" class="projects" aria-live="polite"></section>
-    <section class="notice"><strong>Planning and safety note</strong><p>Quantities and prices are planning estimates. Confirm current Costa Rica pricing, actual site measurements, product instructions, structural requirements, and safety-sensitive work before purchasing or construction.</p></section>
+    <section id="projects" class="panel" aria-labelledby="projects-title" hidden>
+      <div class="page-head"><div><p class="eyebrow">Detailed plans</p><h1 id="projects-title">Projects</h1><p>Open a project to review quantities, costs, tools, assumptions, and next steps.</p></div><span id="projects-count" class="pill"></span></div>
+      <div id="project-list"></div>
+    </section>
+    <section id="materials" class="panel" aria-labelledby="materials-title" hidden>
+      <div class="page-head"><div><p class="eyebrow">Shopping & preparation</p><h1 id="materials-title">Materials</h1><p>One combined list across all active projects.</p></div><span id="materials-count" class="pill"></span></div>
+      <div class="table-wrap"><table class="materials-table"><thead><tr><th>Material</th><th>Quantity</th><th>Project</th><th>Planning note</th></tr></thead><tbody id="materials-list"></tbody></table></div>
+    </section>
+    <section id="history" class="panel" aria-labelledby="history-title" hidden>
+      <div class="page-head"><div><p class="eyebrow">Completed work</p><h1 id="history-title">Project history</h1><p>Finished projects and the outcomes worth keeping.</p></div><span id="history-count" class="pill"></span></div>
+      <div id="history-list"></div>
+    </section>
+    <section class="notice"><strong>Planning and safety note</strong><p>Quantities and prices are planning estimates. Confirm Costa Rica pricing, site measurements, product instructions, structural requirements, and safety-sensitive work before purchasing or construction.</p></section>
     <p id="load-error" class="error" hidden>The dashboard data could not be loaded. Please retry shortly.</p>
   </main>
   <footer>Public read-only dashboard · No tracking, cookies, forms, or personal data</footer>
