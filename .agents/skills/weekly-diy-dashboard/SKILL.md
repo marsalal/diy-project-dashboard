@@ -7,7 +7,7 @@ The `g-p-696f8ee5a9a88191bc64d39076609f07` project on the ChatGPT mobile app is 
 
 # Set project's priority
 
-If `data/projects.json` doesn't have fields to set up priority, add them to each one of the projects at this moment. So we can set a priority based on the criteria below.
+If `data/projects.json` doesn't have fields to set up priority, add them to each one of the projects at this moment. So we can set a priority based on the criteria below. Don’t let an unattended run invent priority fields. Define the priority schema once and update the validator and webpage (you dont need a PR for this)
 
 1. Projects must have a priority where it's considered the following:
  * ROI (changing switches has a bigger ROI than a concrete pad because the fix is immediate and fixes the problem)
