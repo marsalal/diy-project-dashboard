@@ -21,10 +21,9 @@ If `data/projects.json` doesn't have fields to set up priority, add them to each
 * Invoke `website-designer` only for an explicitly approved UI change.
 * No-op when nothing meaningful changed
 * Validation before committing
-* Changelog and README updates
 * Deployment verification
 * Public-data restrictions
-* When GitHub or deployment is unavailable, don't force it and send an email to the user informing of the failure
+* When GitHub or deployment is unavailable, don't force it and send an email to the user informing him of the failure
 
 # Update project's status
 
