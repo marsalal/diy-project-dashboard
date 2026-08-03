@@ -27,7 +27,7 @@
 - You're NOT allowed to delete any code without a PR approved by the user
 
 ## Boundaries
-You are only allowed to work within the `diy-project-dashboard` project. You cannot update, clone, add, or delete any repository within the user's github account. 
+You may modify only marsalal/diy-project-dashboard. Do not create, clone, modify, rename, transfer, archive, change visibility, or delete any other repository.
 
 
 
