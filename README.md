@@ -19,6 +19,13 @@ The weekly automation reviews the approved DIY planner context. When project con
 
 ## Latest changes
 
+### 2026-08-03 — Priority and history navigation
+
+- Added a validated priority model using ROI, complexity, tool readiness, and explicit ranking reasons.
+- Added a mobile-first top-three priority view: the current project followed by the next two ranked projects.
+- Added a keyboard-accessible project-history drawer with completion dates and concise summaries.
+- Added priority tags to every expandable active-project card.
+
 ### 2026-08-03 — Initial public dashboard
 
 - Created the dependency-free dashboard and accessible expandable project cards.

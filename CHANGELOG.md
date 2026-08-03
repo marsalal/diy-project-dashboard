@@ -2,6 +2,17 @@
 
 All meaningful dashboard changes are recorded here using explicit dates and descriptions.
 
+## 2026-08-03 — Priority and history navigation
+
+### Added
+
+- Defined and validated a stable priority schema for every active project: unique rank, score, ROI, complexity, tool readiness, and decision reasons.
+- Ranked the concrete pad first, guanacaste tables second, office WPC wall third, and Adirondack garden corner fourth.
+- Added a visible top-three priority section containing the current project and the next two highest-priority projects.
+- Added neutral priority tags to the expandable project cards.
+- Added an accessible hamburger-controlled left drawer for completed-project history, including completion date and purpose summary.
+- Added a dedicated mobile-first stylesheet for the new navigation and priority interface.
+
 ## 2026-08-03
 
 ### Added

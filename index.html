@@ -6,9 +6,18 @@
   <meta name="description" content="Marco's DIY project dashboard with progress, tasks, quantified materials, tools, labor, and Costa Rica cost estimates.">
   <title>DIY Project Dashboard</title>
   <link rel="stylesheet" href="assets/styles.css">
+  <link rel="stylesheet" href="assets/dashboard-ui.css">
   <script src="assets/dashboard.js" defer></script>
 </head>
 <body>
+  <button id="history-toggle" class="history-toggle" type="button" aria-controls="history-panel" aria-expanded="false"><span aria-hidden="true">☰</span> Project history</button>
+  <div id="history-backdrop" class="history-backdrop" hidden></div>
+  <aside id="history-panel" class="history-panel" aria-labelledby="history-heading" aria-hidden="true">
+    <button id="history-close" class="history-close" type="button" aria-label="Close project history">×</button>
+    <p class="eyebrow">Completed projects</p>
+    <h2 id="history-heading">Project history</h2>
+    <div id="history-list"><p>Loading…</p></div>
+  </aside>
   <header class="hero">
     <div class="hero-inner">
       <p class="eyebrow">Weekly DIY brief</p>
@@ -26,6 +35,10 @@
       <div id="completed-list"><h2 id="completed-heading">Loading…</h2></div>
     </section>
     <div class="section-head">
+      <div><h2>Top 3 priorities</h2><p>Your current project followed by the two highest-priority projects.</p></div>
+    </div>
+    <section id="top-projects" class="top-projects" aria-label="Top three project priorities"></section>
+    <div class="section-head">
       <div><h2>Active projects</h2><p>Select a project to reveal quantified materials, tools, assumptions, and next steps.</p></div>
       <span id="active-count"></span>
     </div>
@@ -36,4 +49,3 @@
   <footer>Public read-only dashboard · No tracking, cookies, forms, or personal data</footer>
 </body>
 </html>
-
