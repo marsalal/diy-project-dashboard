@@ -8,6 +8,7 @@ description: Works and manages the website UI/UX to refresh, update, or just mai
 * Must be accessible
 * Colors must be neutral and not flashy.
 * Project section must be expandable/collapsible to allow easiness to read
+* You should update the UI when you consider it fit to make content easy to read and easy to navigate.
 
 # Left panel - Non-Negotiable
 * Have a section for past projects completed in the left panel (with hamburger icon and feature) to display old and completed projects.
