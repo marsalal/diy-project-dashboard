@@ -4,7 +4,7 @@ const projectById=(data,id)=>data.projects.find(project=>project.id===id);
 const priorityTags=project=>`<div class="priority-tags"><span>ROI: ${esc(project.priority.roi)}</span><span>Complexity: ${esc(project.priority.complexity)}</span><span>${project.priority.toolsReady?"Tools ready":"Waiting on tools"}</span></div>`;
 
 function renderTopProject(project,label){
-  return `<article class="top-project" data-tone="${tones[project.id]||"blue"}"><div><span class="top-label">${esc(label)}</span><h3>${esc(project.name)}</h3></div><strong>${project.priority.score}</strong>${priorityTags(project)}<p>${esc(project.priority.reasons[0])}</p></article>`;
+  return `<article class="top-project" data-tone="${tones[project.id]||"blue"}"><div><span class="top-label">${esc(label)}</span><h3>${esc(project.name)}</h3></div><div class="priority-score" aria-label="Priority score: ${project.priority.score} out of 100"><span>Priority score</span><strong>${project.priority.score}<small>/100</small></strong></div>${priorityTags(project)}<p>${esc(project.priority.reasons[0])}</p></article>`;
 }
 
 function renderProject(project){
@@ -43,7 +43,6 @@ async function loadDashboard(){
     const top=[current,...nextPriorities];
     document.querySelector("#top-projects").innerHTML=top.map((project,index)=>renderTopProject(project,index===0?"Current project":`Priority ${project.priority.rank}`)).join("");
     document.querySelector("#projects").innerHTML=ranked.map(renderProject).join("");
-    document.querySelector("#completed-list").innerHTML=data.completed.length?data.completed.map(item=>`<article><h2>✓ ${esc(item.name)}</h2><p>Completed ${esc(item.completedAt)} · ${esc(item.summary)}</p></article>`).join(""):"<h2>No completions recorded</h2>";
     document.querySelector("#history-list").innerHTML=data.completed.length?data.completed.map(item=>`<article><h3>${esc(item.name)}</h3><time datetime="${esc(item.completedAt)}">${esc(item.completedAt)}</time><p>${esc(item.summary)}</p></article>`).join(""):"<p>No completed projects recorded yet.</p>";
   }catch(error){document.querySelector("#load-error").hidden=false;document.querySelector("#projects").setAttribute("aria-busy","false");}
 }
