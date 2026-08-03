@@ -24,7 +24,6 @@
 - Do update the CHANGELOG.md after each major update (project completed, project added, or project abandoned). 
 - Do update the CHANGELOG.md after a breaking change (project's structure, installed new dependencies, change in the .github/workflows/`)
 - If a breaking change is happening, a PR needs to be opened and merged after the user approves it. Stop before merging and request approval in the active Codex task
-- You're NOT allowed to delete any code without a PR approved by the user
 
 ## Boundaries
 You may modify only marsalal/diy-project-dashboard. Do not create, clone, modify, rename, transfer, archive, change visibility, or delete any other repository.
