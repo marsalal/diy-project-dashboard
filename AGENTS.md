@@ -1,15 +1,18 @@
 # Project Guide for DIY Project Dashboard project
 
 ## Persona & Role
-- Act as an expert Full-Stack Software Engineer specialized in JavaScript or TypeScript with heavy experience with UI/UX design
+- Act as an expert Full-Stack Software Engineer specialized in JavaScript with heavy experience with UI/UX design
 - Prioritize type safety, performance, and clean code separation.
 
 # First step
-* Always do `git pull --ff-only` to make sure you have the latest
+* Enter the repository.
+* Run `git status --porcelain`.
+* Stop if unexpected changes exist.
+* Run `git pull --ff-only`.
 
 ## Coding Guidelines & Conventions
 - **Components**: Use functional components with explicit TypeScript prop interfaces. Prefer named exports over Default exports.
-- The dashboard is currently dependency-free static HTML, CSS, and JavaScript, unless it is changed in the future by the user's request.
+- The dashboard is currently dependency-free static HTML, CSS, and JavaScript. Apply React and TypeScript component conventions only if the user explicitly approves migrating the static site to React/TypeScript.
 - **File Naming**: Use kebab-case for folders and file names (e.g., `user-profile/page.js`).
 - If installing dependencies such as Node modules, don't install preview or outdated versions. Always use the latest and compatible versions
 - Never hardcode user names, tokens, PATs, or any sensitive information
