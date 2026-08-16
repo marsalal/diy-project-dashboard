@@ -2,6 +2,15 @@
 
 All meaningful dashboard changes are recorded here using explicit dates and descriptions.
 
+## 2026-08-15 — Concrete pad ready for final checks and pour
+
+### Changed
+
+- Updated the pad's final formed dimensions to 1.90 × 1.52 × 0.10 m and recalculated the pour target to approximately 0.32 m³ including margin.
+- Advanced the project from 25% planning to 65% completion after excavation, formwork, staking, base placement and compaction, and mesh positioning.
+- Replaced planning tasks with the remaining pre-pour inspection, reinforcement adjustment, concrete placement, finishing, curing, and later garden-transition measurements.
+- Marked installed formwork, stakes, compacted base, and reinforcement in the material state.
+
 ## 2026-08-03 — Project studio redesign
 
 ### Changed

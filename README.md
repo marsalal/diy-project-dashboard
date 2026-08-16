@@ -19,6 +19,12 @@ The weekly automation reviews the approved DIY planner context. When project con
 
 ## Latest changes
 
+### 2026-08-15 — Concrete pad prepared for pour
+
+- Recorded the final 1.90 × 1.52 m pad dimensions and approximately 0.32 m³ pour target.
+- Advanced the pad to 65% after excavation, formwork, staking, compacted base, and mesh placement.
+- Added the remaining post-rain checks, mesh adjustments, pour, finish, and curing tasks.
+
 ### 2026-08-03 — Project studio redesign
 
 - Reworked the dashboard into a responsive studio layout with Overview, Projects, Materials, and History views.

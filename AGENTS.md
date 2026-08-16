@@ -19,6 +19,7 @@
 
 ## Git & Pull Request Guidelines
 - Follow the Conventional Commits format for all commit messages (e.g., `feat(auth): add login validation`, `fix(api): resolve styling issue`).
+- After updating dashboard data to reflect project progress, status, or other project changes, validate the repository, commit the complete dashboard update, and push the current branch. Do not leave a completed dashboard data update only in the local working tree unless the user explicitly asks for local-only changes.
 - Do not modify files inside the `.github/workflows/` or `config/` directories unless explicitly asked by the user.
 - Do not clone this repo anywhere unless the user explicitly asks you to. Follow instructions within /SECURITY.md
 - Do update the CHANGELOG.md after each major update (project completed, project added, or project abandoned). 
@@ -27,6 +28,5 @@
 
 ## Boundaries
 You may modify only marsalal/diy-project-dashboard. Do not create, clone, modify, rename, transfer, archive, change visibility, or delete any other repository.
-
 
 
