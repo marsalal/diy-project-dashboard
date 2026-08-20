@@ -2,6 +2,17 @@
 
 All meaningful dashboard changes are recorded here using explicit dates and descriptions.
 
+## 2026-08-20 — Guanacaste table flattening plan
+
+### Changed
+
+- Set the guanacaste slab tables as the current project based on the latest meaningful DIY activity and moved the prepared concrete pad to recommended next.
+- Raised the table project to 40% and recorded the decision to flatten both slabs with a reusable router sled because the available industrial planer cannot accept them.
+- Added a 1½–2 in surfacing/spoilboard bit, straight parallel sled rails, a rigid router carriage, and the available M18 router to the material and tool plan.
+- Added the flattening sequence: measure both slabs, build and level the sled, take shallow 1–2 mm passes, make the second face parallel, then sand and stabilize voids.
+- Revised labor and cost language to separate the router-sled build and flattening work from sanding, finishing, and assembly.
+- Re-ranked the guanacaste tables first and the concrete pad second while retaining the WPC wall and Adirondack corner rankings.
+
 ## 2026-08-15 — Concrete pad ready for final checks and pour
 
 ### Changed
