@@ -2,6 +2,13 @@
 
 All meaningful dashboard changes are recorded here using explicit dates and descriptions.
 
+## 2026-08-21 — Email recipient safeguard
+
+### Changed
+
+- Restricted weekly dashboard and failure-notice emails to the authenticated mailbox owner's own address by default.
+- Required any external recipient's exact email address to be manually entered and explicitly authorized in the current prompt, including for To, CC, BCC, replies, forwards, aliases, and distribution lists.
+
 ## 2026-08-21 — Concrete pad cost references
 
 ### Added
