@@ -19,6 +19,11 @@ for(const project of data.projects){
   if(typeof project.priority.toolsReady!=="boolean")throw new Error(`${project.id} priority.toolsReady must be boolean`);
   if(!Array.isArray(project.priority.reasons)||!project.priority.reasons.length)throw new Error(`${project.id} priority.reasons must be a non-empty array`);
   for(const field of ["nextTasks","materials","tools","sources"]){if(!Array.isArray(project[field]))throw new Error(`${project.id}.${field} must be an array`)}
+  if(project.costReferences!==undefined){
+    if(!project.recordedCost)throw new Error(`${project.id} with costReferences must include recordedCost`);
+    if(!Array.isArray(project.costReferences)||!project.costReferences.length)throw new Error(`${project.id}.costReferences must be a non-empty array`);
+    for(const reference of project.costReferences){for(const field of ["date","item","quantity","amount","note"]){if(!reference[field])throw new Error(`${project.id}.costReferences entry missing ${field}`)}}
+  }
   for(const source of project.sources){new URL(source.url)}
 }
 if(new Set(data.projects.map(project=>project.priority.rank)).size!==data.projects.length)throw new Error("Priority ranks must be unique");
