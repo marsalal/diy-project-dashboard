@@ -8,7 +8,8 @@ All meaningful dashboard changes are recorded here using explicit dates and desc
 
 - Recorded the 2026-08-15 material receipt with eight reconciled line totals and its ₡119.855,80 final total.
 - Added current reference prices for one 50 kg Holcim cement bag, a 6 × 4 in sidewalk edging trowel, and an 11 × 5 in finishing trowel.
-- Added a dedicated project cost-reference table and kept the ₡131.836,80 documented total distinct from the remaining-cost estimate.
+- Finalized the concrete pad expense report at ₡131.836,80 with no additional expenses expected and ₡0 remaining.
+- Added the final total to the project summary and an accessible modal showing every expense line, quantity, description, and amount.
 
 ## 2026-08-20 — Guanacaste table flattening plan
 

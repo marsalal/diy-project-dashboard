@@ -6,9 +6,9 @@
   <meta name="description" content="A calm project studio for tracking DIY priorities, materials, costs, tools, and completed work.">
   <meta name="theme-color" content="#252b2d">
   <title>DIY Project Studio</title>
-  <link rel="stylesheet" href="assets/styles.css?v=20260803-3">
-  <link rel="stylesheet" href="assets/dashboard-ui.css?v=20260803-3">
-  <script src="assets/dashboard.js?v=20260803-3" defer></script>
+  <link rel="stylesheet" href="assets/styles.css?v=20260821-1">
+  <link rel="stylesheet" href="assets/dashboard-ui.css?v=20260821-1">
+  <script src="assets/dashboard.js?v=20260821-1" defer></script>
 </head>
 <body>
   <header class="appbar">
@@ -47,6 +47,13 @@
     <section class="notice"><strong>Planning and safety note</strong><p>Quantities and prices are planning estimates. Confirm Costa Rica pricing, site measurements, product instructions, structural requirements, and safety-sensitive work before purchasing or construction.</p></section>
     <p id="load-error" class="error" hidden>The dashboard data could not be loaded. Please retry shortly.</p>
   </main>
+  <dialog id="expense-modal" class="expense-modal" aria-labelledby="expense-modal-title" aria-describedby="expense-modal-status">
+    <div class="modal-head">
+      <div><p class="eyebrow">Final expense report</p><h2 id="expense-modal-title"></h2><p id="expense-modal-status" class="modal-status"></p></div>
+      <form method="dialog"><button class="modal-close" type="submit" aria-label="Close expense report">×</button></form>
+    </div>
+    <div class="table-wrap"><table class="materials-table expense-table"><caption class="sr-only">Final project expenses by date, item, quantity, description, and line total</caption><thead><tr><th>Date</th><th>Item</th><th>Quantity</th><th>Description</th><th>Line total</th></tr></thead><tbody id="expense-modal-items"></tbody><tfoot><tr><th colspan="4">Final project total</th><td id="expense-modal-total"></td></tr></tfoot></table></div>
+  </dialog>
   <footer>Public read-only dashboard · No tracking, cookies, forms, or personal data</footer>
 </body>
 </html>

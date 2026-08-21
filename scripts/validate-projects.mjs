@@ -19,10 +19,16 @@ for(const project of data.projects){
   if(typeof project.priority.toolsReady!=="boolean")throw new Error(`${project.id} priority.toolsReady must be boolean`);
   if(!Array.isArray(project.priority.reasons)||!project.priority.reasons.length)throw new Error(`${project.id} priority.reasons must be a non-empty array`);
   for(const field of ["nextTasks","materials","tools","sources"]){if(!Array.isArray(project[field]))throw new Error(`${project.id}.${field} must be an array`)}
-  if(project.costReferences!==undefined){
-    if(!project.recordedCost)throw new Error(`${project.id} with costReferences must include recordedCost`);
-    if(!Array.isArray(project.costReferences)||!project.costReferences.length)throw new Error(`${project.id}.costReferences must be a non-empty array`);
-    for(const reference of project.costReferences){for(const field of ["date","item","quantity","amount","note"]){if(!reference[field])throw new Error(`${project.id}.costReferences entry missing ${field}`)}}
+  if(project.expenseReport!==undefined){
+    const report=project.expenseReport;
+    for(const field of ["status","finalizedAt","total","items"]){if(report[field]===undefined)throw new Error(`${project.id}.expenseReport missing ${field}`)}
+    if(!Array.isArray(report.items)||!report.items.length)throw new Error(`${project.id}.expenseReport.items must be a non-empty array`);
+    for(const item of report.items){
+      for(const field of ["date","item","quantity","amount","description"]){if(item[field]===undefined||item[field]==="")throw new Error(`${project.id}.expenseReport item missing ${field}`)}
+      if(typeof item.amount!=="number"||item.amount<0)throw new Error(`${project.id}.expenseReport item amount must be a non-negative number`);
+    }
+    const itemTotal=report.items.reduce((total,item)=>total+item.amount,0);
+    if(Math.abs(itemTotal-report.total)>0.001)throw new Error(`${project.id}.expenseReport total does not match its line items`);
   }
   for(const source of project.sources){new URL(source.url)}
 }

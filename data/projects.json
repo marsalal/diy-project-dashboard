@@ -19,21 +19,25 @@
       "progress": 65,
       "priority": {"rank":2,"score":94,"roi":"High","complexity":"High","toolsReady":true,"reasons":["Formwork, compacted base, and reinforcement are already in place","Final checks and the concrete pour are the next time-sensitive milestone","Finishing the pad prevents rain damage to the prepared base"]},
       "labor": "4–6 h remaining for final checks, pour, and finish; 4–8 additional h for steps",
-      "cost": "₡35.000–₡110.000 remaining",
-      "recordedCost": "₡131.836,80 across documented purchases and price references",
-      "costReferences": [
-        {"date":"2026-08-15","item":"Pine board 1 × 4 in × 3.20 m","quantity":"9","amount":"₡20.933,95","note":"Receipt line: Regla pino 1 × 4 @ 3.20."},
-        {"date":"2026-08-15","item":"Pine board 1 × 2 in × 3.20 m","quantity":"8","amount":"₡9.208,71","note":"Receipt line: Regla pino 1 × 2 @ 3.20."},
-        {"date":"2026-08-15","item":"Torfix flat-head screw 9 × 2","quantity":"50","amount":"₡1.127,02","note":"Receipt line: Tornillo Torfix c/plana 9 × 2."},
-        {"date":"2026-08-15","item":"Granular base (lastre)","quantity":"0,50","amount":"₡6.572,49","note":"Quantity unit was not printed on the receipt."},
-        {"date":"2026-08-15","item":"Electrowelded mesh #1, 2.20 × 6 m","quantity":"1","amount":"₡10.399,81","note":"Receipt also shows “(3.80)” in the product description."},
-        {"date":"2026-08-15","item":"River sand","quantity":"0,25","amount":"₡6.015,56","note":"Quantity unit was not printed on the receipt."},
-        {"date":"2026-08-15","item":"Black stone #4 (PC05)","quantity":"2","amount":"₡42.998,26","note":"Quantity unit was not printed on the receipt."},
-        {"date":"2026-08-15","item":"Ferrecar transport","quantity":"20","amount":"₡22.600,00","note":"Receipt line recorded as transport; quantity basis was not printed."},
-        {"date":"2026-08-21","item":"Holcim cement, 50 kg bag","quantity":"1","amount":"₡6.323,00","note":"User-provided price reference."},
-        {"date":"2026-08-21","item":"Sidewalk edging trowel, 6 × 4 in","quantity":"1","amount":"₡2.744,00","note":"User-provided price reference (llaneta de borde acera)."},
-        {"date":"2026-08-21","item":"Finishing trowel, 11 × 5 in","quantity":"1","amount":"₡2.914,00","note":"User-provided price reference (llaneta lisa)."}
-      ],
+      "cost": "₡0 remaining — final expenses recorded",
+      "expenseReport": {
+        "status": "Final — no additional expenses expected",
+        "finalizedAt": "2026-08-21",
+        "total": 131836.80,
+        "items": [
+          {"date":"2026-08-15","item":"Pine board 1 × 4 in × 3.20 m","quantity":"9","amount":20933.95,"description":"Receipt line: Regla pino 1 × 4 @ 3.20."},
+          {"date":"2026-08-15","item":"Pine board 1 × 2 in × 3.20 m","quantity":"8","amount":9208.71,"description":"Receipt line: Regla pino 1 × 2 @ 3.20."},
+          {"date":"2026-08-15","item":"Torfix flat-head screw 9 × 2","quantity":"50","amount":1127.02,"description":"Receipt line: Tornillo Torfix c/plana 9 × 2."},
+          {"date":"2026-08-15","item":"Granular base (lastre)","quantity":"0,50","amount":6572.49,"description":"Quantity unit was not printed on the receipt."},
+          {"date":"2026-08-15","item":"Electrowelded mesh #1, 2.20 × 6 m","quantity":"1","amount":10399.81,"description":"Receipt also shows “(3.80)” in the product description."},
+          {"date":"2026-08-15","item":"River sand","quantity":"0,25","amount":6015.56,"description":"Quantity unit was not printed on the receipt."},
+          {"date":"2026-08-15","item":"Black stone #4 (PC05)","quantity":"2","amount":42998.26,"description":"Quantity unit was not printed on the receipt."},
+          {"date":"2026-08-15","item":"Ferrecar transport","quantity":"20","amount":22600.00,"description":"Receipt line recorded as transport; quantity basis was not printed."},
+          {"date":"2026-08-21","item":"Holcim cement, 50 kg bag","quantity":"1","amount":6323.00,"description":"Final additional expense provided by the user."},
+          {"date":"2026-08-21","item":"Sidewalk edging trowel, 6 × 4 in","quantity":"1","amount":2744.00,"description":"Llaneta de borde acera; final additional expense provided by the user."},
+          {"date":"2026-08-21","item":"Finishing trowel, 11 × 5 in","quantity":"1","amount":2914.00,"description":"Llaneta lisa; final additional expense provided by the user."}
+        ]
+      },
       "assumption": "Final formed pad is 1.90 × 1.52 × 0.10 m (2.89 m²; 0.289 m³ net concrete, approximately 0.32 m³ with margin). Step quantities remain pending until the 3.80 m transition's vertical rise is measured.",
       "nextTasks": [
         "After rain, confirm the compacted base remains firm and has no erosion, soft spots, or standing water.",

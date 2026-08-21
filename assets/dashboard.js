@@ -1,5 +1,7 @@
 const esc=value=>String(value).replace(/[&<>'"]/g,char=>({"&":"&amp;","<":"&lt;",">":"&gt;","'":"&#39;",'"':"&quot;"}[char]));
 const projectById=(data,id)=>data.projects.find(project=>project.id===id);
+const formatCRC=value=>`₡${Number(value).toFixed(2).replace(/\B(?=(\d{3})+(?!\d))/g,"X").replace(".",",").replaceAll("X",".")}`;
+let dashboardData;
 
 function showPanel(panelId){
   document.querySelectorAll(".panel").forEach(panel=>{const active=panel.id===panelId;panel.classList.toggle("active",active);panel.hidden=!active});
@@ -25,10 +27,22 @@ function renderLane(title,items){
 function renderProject(project){
   const tasks=project.nextTasks.map(task=>`<li>${esc(task)}</li>`).join("");
   const materials=project.materials.map(material=>`<tr><td>${esc(material.item)}</td><td>${esc(material.quantity)}</td><td>${esc(material.note)}</td></tr>`).join("");
-  const costReferences=project.costReferences?.length?`<h3>Recorded costs & price references</h3><p class="cost-summary"><strong>Documented total:</strong> ${esc(project.recordedCost)}</p><div class="table-wrap"><table class="materials-table"><thead><tr><th>Date</th><th>Item</th><th>Quantity</th><th>Amount</th><th>Reference note</th></tr></thead><tbody>${project.costReferences.map(reference=>`<tr><td>${esc(reference.date)}</td><td>${esc(reference.item)}</td><td>${esc(reference.quantity)}</td><td>${esc(reference.amount)}</td><td>${esc(reference.note)}</td></tr>`).join("")}</tbody></table></div>`:"";
+  const expenseSummary=project.expenseReport?`<div class="summary-expense"><span>Final expenses</span><strong>${formatCRC(project.expenseReport.total)}</strong><button class="expense-button" type="button" data-expense-project="${esc(project.id)}">View expense report</button></div>`:"";
+  const expenseMetric=project.expenseReport?`<div class="metric"><span>Final expenses</span><b>${formatCRC(project.expenseReport.total)}</b></div>`:"";
   const tools=project.tools.map(tool=>`<span class="chip">${esc(tool)}</span>`).join("");
   const sources=project.sources.length?`<div class="sources"><h3>Sources</h3>${project.sources.map(source=>`<a href="${esc(source.url)}" target="_blank" rel="noopener noreferrer">${esc(source.label)}</a>`).join("")}</div>`:"";
-  return `<details class="project"><summary><div class="summary-row"><div><span class="status">Priority ${project.priority.rank} · ${esc(project.status)}</span><h2>${esc(project.name)}</h2><small>Open materials, tools, costs, assumptions, and next steps</small></div><span class="percentage">${project.progress}%</span></div><div class="project-progress" aria-label="${project.progress}% complete"><i style="width:${project.progress}%"></i></div></summary><div class="project-detail"><div class="detail-grid"><section class="detail-block"><h3>Next steps</h3><ul>${tasks}</ul></section><section class="detail-block"><h3>Plan snapshot</h3><div class="metrics"><div class="metric"><span>Labor</span><b>${esc(project.labor)}</b></div><div class="metric"><span>Remaining cost</span><b>${esc(project.cost)}</b></div><div class="metric"><span>ROI</span><b>${esc(project.priority.roi)}</b></div><div class="metric"><span>Complexity</span><b>${esc(project.priority.complexity)}</b></div></div></section></div><p class="assumption"><strong>Planning assumption:</strong> ${esc(project.assumption)}</p><h3>Quantified materials</h3><div class="table-wrap"><table class="materials-table"><thead><tr><th>Material</th><th>Quantity</th><th>Planning note</th></tr></thead><tbody>${materials}</tbody></table></div>${costReferences}<h3>Tools & equipment</h3><div class="chips">${tools}</div>${sources}</div></details>`;
+  return `<details class="project"><summary><div class="summary-row"><div><span class="status">Priority ${project.priority.rank} · ${esc(project.status)}</span><h2>${esc(project.name)}</h2><small>Open materials, tools, costs, assumptions, and next steps</small></div><div class="summary-aside"><span class="percentage">${project.progress}%</span>${expenseSummary}</div></div><div class="project-progress" aria-label="${project.progress}% complete"><i style="width:${project.progress}%"></i></div></summary><div class="project-detail"><div class="detail-grid"><section class="detail-block"><h3>Next steps</h3><ul>${tasks}</ul></section><section class="detail-block"><h3>Plan snapshot</h3><div class="metrics"><div class="metric"><span>Labor</span><b>${esc(project.labor)}</b></div><div class="metric"><span>Remaining cost</span><b>${esc(project.cost)}</b></div>${expenseMetric}<div class="metric"><span>ROI</span><b>${esc(project.priority.roi)}</b></div><div class="metric"><span>Complexity</span><b>${esc(project.priority.complexity)}</b></div></div></section></div><p class="assumption"><strong>Planning assumption:</strong> ${esc(project.assumption)}</p><h3>Quantified materials</h3><div class="table-wrap"><table class="materials-table"><thead><tr><th>Material</th><th>Quantity</th><th>Planning note</th></tr></thead><tbody>${materials}</tbody></table></div><h3>Tools & equipment</h3><div class="chips">${tools}</div>${sources}</div></details>`;
+}
+
+function openExpenseReport(projectId){
+  const project=projectById(dashboardData,projectId);
+  if(!project?.expenseReport)return;
+  const report=project.expenseReport;
+  document.querySelector("#expense-modal-title").textContent=project.name;
+  document.querySelector("#expense-modal-status").textContent=`${report.status} · Finalized ${report.finalizedAt}`;
+  document.querySelector("#expense-modal-items").innerHTML=report.items.map(item=>`<tr><td>${esc(item.date)}</td><td>${esc(item.item)}</td><td>${esc(item.quantity)}</td><td>${esc(item.description)}</td><td>${formatCRC(item.amount)}</td></tr>`).join("");
+  document.querySelector("#expense-modal-total").textContent=formatCRC(report.total);
+  document.querySelector("#expense-modal").showModal();
 }
 
 function renderMaterialRows(projects){
@@ -40,6 +54,7 @@ async function loadDashboard(){
     const response=await fetch("data/projects.json",{cache:"no-store"});
     if(!response.ok)throw new Error("Project data request failed");
     const data=await response.json();
+    dashboardData=data;
     const ranked=[...data.projects].sort((a,b)=>a.priority.rank-b.priority.rank);
     const current=projectById(data,data.currentProjectId);
     const planned=ranked.filter(project=>projectStage(project)==="planned");
@@ -58,5 +73,11 @@ async function loadDashboard(){
     const initial=location.hash.slice(1);if(["overview","projects","materials","history"].includes(initial))showPanel(initial);
   }catch(error){document.querySelector("#load-error").hidden=false;}
 }
+
+document.addEventListener("click",event=>{
+  const expenseButton=event.target.closest("[data-expense-project]");
+  if(expenseButton){event.preventDefault();event.stopPropagation();openExpenseReport(expenseButton.dataset.expenseProject)}
+});
+document.querySelector("#expense-modal").addEventListener("click",event=>{if(event.target===event.currentTarget)event.currentTarget.close()});
 
 loadDashboard();
