@@ -8,8 +8,8 @@ https://marsalal.github.io/diy-project-dashboard/
 
 ## Current focus
 
-- **Current project:** Guanacaste slab tables
-- **Recommended next project:** Concrete pad and garden transition
+- **Current project:** Concrete pad and garden transition
+- **Recommended next project:** Guanacaste slab tables
 - **Active projects:** 4
 - **Recently completed:** Smart-switch replacement
 
@@ -18,6 +18,14 @@ https://marsalal.github.io/diy-project-dashboard/
 The weekly automation reviews the approved DIY planner context. When project content changes, it updates `data/projects.json`, records the change here and in `CHANGELOG.md`, validates the repository, and pushes a new deployment. No deployment commit is created when the dashboard data has not meaningfully changed.
 
 ## Latest changes
+
+### 2026-08-27 — Concrete pad poured and curing
+
+- Recorded the completed hand pour of the approximately 0.289 m³ concrete pad and raised progress to 85%.
+- Marked the fresh surface finish as irregular, with the final repair decision deferred until the slab has cured and can be measured.
+- Added curing, form removal, hardness, flatness, drainage, edge, and crack checks as the immediate work.
+- Recorded approximately 1½ cement bags and surplus gravel remaining, and removed unverified pre-pour quantity assumptions.
+- Restored the concrete pad as current and kept the router-sled table project as recommended next.
 
 ### 2026-08-20 — Guanacaste table flattening plan
 

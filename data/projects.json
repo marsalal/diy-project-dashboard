@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-21",
+  "updatedAt": "2026-08-27",
   "currency": "CRC",
-  "currentProjectId": "guanacaste-tables",
-  "nextProjectId": "concrete-pad",
+  "currentProjectId": "concrete-pad",
+  "nextProjectId": "guanacaste-tables",
   "completed": [
     {
       "name": "Smart-switch replacement",
@@ -15,13 +15,13 @@
     {
       "id": "concrete-pad",
       "name": "Concrete pad & garden transition",
-      "status": "Pad prepared for pour",
-      "progress": 65,
-      "priority": {"rank":2,"score":94,"roi":"High","complexity":"High","toolsReady":true,"reasons":["Formwork, compacted base, and reinforcement are already in place","Final checks and the concrete pour are the next time-sensitive milestone","Finishing the pad prevents rain damage to the prepared base"]},
-      "labor": "4–6 h remaining for final checks, pour, and finish; 4–8 additional h for steps",
-      "cost": "₡0 remaining — final expenses recorded",
+      "status": "Poured and curing; surface assessment pending",
+      "progress": 85,
+      "priority": {"rank":1,"score":98,"roi":"High","complexity":"High","toolsReady":true,"reasons":["The approximately 0.29 m³ slab has been poured and is the latest active work","Correct curing protects the completed structural work","The cured surface must be assessed before deciding whether any repair is warranted"]},
+      "labor": "Brief moisture checks during curing; 1–2 h to remove forms and assess the cured slab; any surface repair is pending diagnosis; 4–8 additional h for steps",
+      "cost": "₡0 additional cost committed; surface repair and step costs remain pending measurement",
       "expenseReport": {
-        "status": "Final — no additional expenses expected",
+        "status": "Pour expenses finalized — repair costs not yet assessed",
         "finalizedAt": "2026-08-21",
         "total": 131836.80,
         "items": [
@@ -38,27 +38,28 @@
           {"date":"2026-08-21","item":"Finishing trowel, 11 × 5 in","quantity":"1","amount":2914.00,"description":"Llaneta lisa; final additional expense provided by the user."}
         ]
       },
-      "assumption": "Final formed pad is 1.90 × 1.52 × 0.10 m (2.89 m²; 0.289 m³ net concrete, approximately 0.32 m³ with margin). Step quantities remain pending until the 3.80 m transition's vertical rise is measured.",
+      "assumption": "The 1.90 × 1.52 × 0.10 m pad (2.89 m²; approximately 0.289 m³) was poured by hand in batches. The slab appeared generally filled and reasonably level, but the fresh surface finish was irregular and shed loose grains when worked late. Allow it to cure before deciding among no repair, localized correction, or resurfacing. Step quantities remain pending until the 3.80 m transition's vertical rise is measured.",
       "nextTasks": [
-        "After rain, confirm the compacted base remains firm and has no erosion, soft spots, or standing water.",
-        "Recheck that the compacted base is about 10 cm below the top of the form throughout.",
-        "Adjust the mesh supports to hold the steel about 4–5 cm above the base with about 5 cm perimeter clearance.",
-        "Inspect the stored cement, stage the concrete materials and tools, then pour and finish approximately 0.32 m³.",
-        "Cure the slab, remove the forms when appropriate, and avoid early wheelbarrow loading.",
+        "Keep the slab moist and covered during the initial cure without disturbing the surface.",
+        "After curing, remove the forms and inspect surface hardness, loose material, flatness, drainage, edges, and any cracks.",
+        "Use a long straightedge and localized scratch checks to classify the finish as acceptable, locally repairable, or needing a compatible resurfacing system.",
+        "Do not buy or apply repair material until the cured surface condition and repair depth are measured.",
+        "Avoid early wheelbarrow loading and retain the surplus aggregate and cement for measured follow-up work.",
         "Measure the vertical rise across the 3.80 m transition and choose poured or precast steps after inventorying leftovers."
       ],
       "materials": [
-        {"item":"General-purpose cement","quantity":"3 × 50 kg bags on hand","note":"Inspect before use. Final yield depends on the selected mix design; keep any fourth bag as contingency rather than changing proportions."},
-        {"item":"Clean construction sand","quantity":"Recalculate for ~0.32 m³ concrete","note":"Stage enough material for the full pour and preserve the selected mix proportions."},
-        {"item":"Clean gravel/rock","quantity":"Recalculate for ~0.32 m³ concrete","note":"Use concrete aggregate, not the compacted-base lastre."},
-        {"item":"Clean water","quantity":"Add gradually to the selected mix","note":"Avoid an overly wet mix; wet aggregate reduces required water."},
-        {"item":"Form lumber","quantity":"Installed for 1.90 × 1.52 m pad","note":"Formwork is squared, set to the intended drainage plane, and staked."},
-        {"item":"Wood stakes","quantity":"8 installed","note":"Placed outside the form near corners and side centers."},
+        {"item":"Placed concrete","quantity":"Approximately 0.289 m³ in a 1.90 × 1.52 × 0.10 m pad","note":"Mixed and poured by hand in successive batches; cure fully before evaluating the finish."},
+        {"item":"General-purpose cement","quantity":"Approximately 1½ × 50 kg bags remain","note":"About 2½ bags were used based on the confirmed remainder; store the rest dry for measured follow-up work."},
+        {"item":"Clean construction sand","quantity":"Pour completed; exact remainder not confirmed","note":"Inventory leftovers before planning steps or repairs."},
+        {"item":"Clean gravel/rock","quantity":"Substantial surplus remains","note":"The original staging estimate was high; measure the remainder before assigning it to the transition or another project."},
+        {"item":"Curing water and plastic","quantity":"Enough to keep the slab moist and covered","note":"Maintain moisture without washing or marking the surface."},
+        {"item":"Form lumber","quantity":"Installed around 1.90 × 1.52 m pad","note":"Leave in place until appropriate removal, then inspect the edges."},
+        {"item":"Wood stakes","quantity":"8 installed","note":"Remove with the forms when the slab has cured sufficiently."},
         {"item":"Exterior form screws","quantity":"1 box, about 50","note":"Easier removal than nails."},
         {"item":"Reinforcement","quantity":"Mesh cut/presented at approximately 1.80 × 1.42 m","note":"Maintain about 5 cm concrete cover around the perimeter."},
-        {"item":"Mesh supports","quantity":"8–10 small cementitious supports in place","note":"Before pouring, confirm stable support and about 4–5 cm height; reduce any oversized pieces."},
-        {"item":"Granular base","quantity":"Installed, moistened, and compacted","note":"Recheck after rain for firmness, drainage, and a consistent ~10 cm pour depth."},
-        {"item":"Curing plastic","quantity":"1 sheet, at least 3 × 3 m","note":"An appropriate curing compound is an alternative."}
+        {"item":"Mesh supports","quantity":"8–10 small cementitious supports used","note":"The mesh was embedded during placement; verify no steel is exposed when the forms come off."},
+        {"item":"Granular base","quantity":"Installed beneath the slab","note":"Compacted before the pour."},
+        {"item":"Surface repair material","quantity":"None until diagnosis","note":"Select and quantify only after the cured slab is checked for hardness, defect depth, and flatness."}
       ],
       "tools": ["1 wheelbarrow","1 mixer or heavy-duty mixing tub","2 shovels and 1 hoe","1 hand tamper or rented plate compactor","1 screed board at least 2.2 m long","1 concrete float","1 finishing trowel","1 edger and 1 groover","Level, tape, string or laser level, gloves, boots, eye protection, and dust protection"],
       "sources": [{"label":"Grupo Puma concrete yield reference","url":"https://www.grupopuma.com/es-CR/productos/ver/paviland-concreto-multiuso-tipo-a-cr-es"}]
@@ -91,7 +92,7 @@
       "name": "Guanacaste slab tables",
       "status": "Router-sled flattening planned",
       "progress": 40,
-      "priority": {"rank":1,"score":95,"roi":"High","complexity":"Medium","toolsReady":true,"reasons":["This is the latest project with an active implementation decision","The stabilized slabs and M18 router are already available","A reusable router sled resolves the remaining flattening dependency and unlocks two usable tables"]},
+      "priority": {"rank":2,"score":95,"roi":"High","complexity":"Medium","toolsReady":true,"reasons":["The stabilized slabs and M18 router are already available","A reusable router sled resolves the remaining flattening dependency","Finishing the slabs unlocks two usable tables after the concrete slab reaches its assessment milestone"]},
       "labor": "3–5 h to build and level the sled; 4–8 h to flatten both slabs; 8–14 h for sanding, repairs, finish, and assembly, plus curing time",
       "cost": "₡45.000–₡110.000 remaining, plus the router-sled rails/base and surfacing bit",
       "assumption": "A local planer cannot accept the slabs, so the current plan is a reusable router sled. Final sled dimensions depend on measuring the larger slab, estimated at roughly 60–75 cm wide; epoxy consumption depends on voids revealed after flattening and 120-grit sanding.",

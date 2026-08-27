@@ -2,6 +2,19 @@
 
 All meaningful dashboard changes are recorded here using explicit dates and descriptions.
 
+## 2026-08-27 — Concrete pad poured and curing
+
+### Changed
+
+- Recorded that the 1.90 × 1.52 × 0.10 m concrete pad, approximately 0.289 m³, was mixed and poured by hand.
+- Raised pad progress from 65% to 85% and changed its state from pour-ready to curing with a cured-surface assessment pending.
+- Documented that the fresh finish was irregular and shed loose grains when worked late, while the slab appeared generally filled and reasonably level.
+- Replaced pre-pour tasks with curing, form removal, surface-hardness, flatness, drainage, edge, and crack checks.
+- Deferred any repair purchase and quantity until the cured slab can be classified as acceptable, locally repairable, or needing a compatible resurfacing system.
+- Recorded approximately 1½ remaining 50 kg cement bags and a substantial gravel surplus; exact sand and gravel remainders still require inventory.
+- Made the concrete pad current again and retained the guanacaste tables as recommended next, ranking them first and second respectively.
+- Preserved the ₡131.836,80 finalized pour expense report while separating any future repair or step costs.
+
 ## 2026-08-21 — Email recipient safeguard
 
 ### Changed
