@@ -2,6 +2,18 @@
 
 All meaningful dashboard changes are recorded here using explicit dates and descriptions.
 
+## 2026-09-03 — Milwaukee-dependent projects paused
+
+### Changed
+
+- Paused the Guanacaste slab tables indefinitely because the M18 router required for the router sled is in a shipment retained in customs, with no reliable release date and a prior shipment having taken about 10 months.
+- Recorded safe storage for the slabs—under cover, off the floor, and ventilated—and deferred additional purchases while they continue stabilizing.
+- Preserved the router-sled plan for resumption; if the delay extends for months, the documented alternatives are a local router rental, a compatible substitute router, or paid flattening only.
+- Paused the office WPC feature wall because its required Milwaukee multi-tool is affected by the same shipment delay and marked tool readiness false.
+- Re-ranked the unblocked Adirondack garden corner second and made it the recommended next project while retaining the concrete pad and garden transition as current.
+- Re-ranked the paused Guanacaste tables third and WPC wall fourth; no progress percentages, material quantities, or cost estimates changed.
+- Updated the recent-completions summary to none because the August 1 smart-switch replacement is now outside the 14-day window; it remains in project history.
+
 ## 2026-08-27 — Concrete pad poured and curing
 
 ### Changed

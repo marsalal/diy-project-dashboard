@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-27",
+  "updatedAt": "2026-09-03",
   "currency": "CRC",
   "currentProjectId": "concrete-pad",
-  "nextProjectId": "guanacaste-tables",
+  "nextProjectId": "adirondack-corner",
   "completed": [
     {
       "name": "Smart-switch replacement",
@@ -67,12 +67,12 @@
     {
       "id": "wpc-wall",
       "name": "Office WPC feature wall",
-      "status": "Planned",
+      "status": "Paused — Milwaukee multi-tool shipment held indefinitely",
       "progress": 15,
-      "priority": {"rank":3,"score":72,"roi":"Medium","complexity":"Medium","toolsReady":true,"reasons":["Strong visual improvement to a daily-use room","Most installation tools are available","Panel coverage must be confirmed before purchase"]},
+      "priority": {"rank":4,"score":54,"roi":"Medium","complexity":"Medium","toolsReady":false,"reasons":["Strong visual improvement to a daily-use room","The required Milwaukee multi-tool is in a shipment held for an indefinite customs delay","Panel coverage must be confirmed before purchase, so no additional materials should be bought while paused"]},
       "labor": "8–12 h",
       "cost": "₡78.000–₡145.000 remaining",
-      "assumption": "Panel count depends on the selected product's effective coverage width and final foliage boundary.",
+      "assumption": "Panel count depends on the selected product's effective coverage width and final foliage boundary. Work is paused indefinitely because the required Milwaukee multi-tool is in the retained shipment; resume only when that tool is available or an alternative is explicitly selected.",
       "nextTasks": ["Confirm the panel sample and effective coverage width.","Cut panels to 2.50 m.","Install the first panel perfectly level.","Cut around three electrical points and finish the edges."],
       "materials": [
         {"item":"WPC wall panels","quantity":"15–16 panels × 2.90 m","note":"Final count depends on effective coverage."},
@@ -90,12 +90,12 @@
     {
       "id": "guanacaste-tables",
       "name": "Guanacaste slab tables",
-      "status": "Router-sled flattening planned",
+      "status": "Paused — Milwaukee router shipment held indefinitely",
       "progress": 40,
-      "priority": {"rank":2,"score":95,"roi":"High","complexity":"Medium","toolsReady":true,"reasons":["The stabilized slabs and M18 router are already available","A reusable router sled resolves the remaining flattening dependency","Finishing the slabs unlocks two usable tables after the concrete slab reaches its assessment milestone"]},
+      "priority": {"rank":3,"score":60,"roi":"High","complexity":"Medium","toolsReady":false,"reasons":["The slabs can remain safely stored and continue stabilizing","The M18 router required for the sled is in a shipment held for an indefinite customs delay","Do not buy more materials until the router arrives or a local rental, substitute router, or paid flattening service is explicitly chosen"]},
       "labor": "3–5 h to build and level the sled; 4–8 h to flatten both slabs; 8–14 h for sanding, repairs, finish, and assembly, plus curing time",
       "cost": "₡45.000–₡110.000 remaining, plus the router-sled rails/base and surfacing bit",
-      "assumption": "A local planer cannot accept the slabs, so the current plan is a reusable router sled. Final sled dimensions depend on measuring the larger slab, estimated at roughly 60–75 cm wide; epoxy consumption depends on voids revealed after flattening and 120-grit sanding.",
+      "assumption": "A local planer cannot accept the slabs, so the preferred plan remains a reusable router sled. The required M18 router is in a shipment held for an indefinite customs delay, with a prior shipment having taken about 10 months. Keep the slabs under cover, off the floor, and ventilated; reconsider a local rental, substitute router, or paid flattening service only if the delay extends for months.",
       "nextTasks": ["Measure the maximum width, length, and remaining twist of both slabs.","Build two straight parallel rails and a rigid router carriage sized for the larger slab.","Obtain a 1½–2 in surfacing/spoilboard bit compatible with the M18 router.","Flatten both faces with shallow 1–2 mm passes, making the second face parallel to the first.","Sand 80 then 120 grit, inspect and stabilize voids, then continue through 180 and 220 grit before finishing and installing legs."],
       "materials": [
         {"item":"Clear epoxy","quantity":"1 × 1 L kit","note":"Expected use is approximately 250–500 ml across both slabs."},
@@ -117,7 +117,7 @@
       "name": "Adirondack garden corner",
       "status": "Design selected",
       "progress": 20,
-      "priority": {"rank":4,"score":58,"roi":"Low","complexity":"Medium","toolsReady":true,"reasons":["Primarily a comfort and landscaping improvement","Higher remaining purchase cost","Path quantities still depend on layout"]},
+      "priority": {"rank":2,"score":66,"roi":"Low","complexity":"Medium","toolsReady":true,"reasons":["It is the highest-readiness project not blocked by the retained Milwaukee shipment","Chair inspection and route layout can proceed without the delayed tools","Higher remaining purchase cost and unconfirmed path quantities limit its score"]},
       "labor": "2–3 h for chairs; 1–2 days for the full corner",
       "cost": "₡275.000–₡350.000 remaining",
       "assumption": "Stepping-stone and bedding-sand quantities remain pending until the path spacing and stone dimensions are selected.",

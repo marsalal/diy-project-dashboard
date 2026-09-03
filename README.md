@@ -9,15 +9,23 @@ https://marsalal.github.io/diy-project-dashboard/
 ## Current focus
 
 - **Current project:** Concrete pad and garden transition
-- **Recommended next project:** Guanacaste slab tables
+- **Recommended next project:** Adirondack garden corner
 - **Active projects:** 4
-- **Recently completed:** Smart-switch replacement
+- **Recently completed (last 14 days):** None
 
 ## How updates work
 
 The weekly automation reviews the approved DIY planner context. When project content changes, it updates `data/projects.json`, records the change here and in `CHANGELOG.md`, validates the repository, and pushes a new deployment. No deployment commit is created when the dashboard data has not meaningfully changed.
 
 ## Latest changes
+
+### 2026-09-03 — Milwaukee-dependent projects paused
+
+- Paused the Guanacaste table and office WPC wall projects indefinitely because their required Milwaukee router and multi-tool are in a shipment retained in customs.
+- Marked those projects' tool readiness false and deferred additional material purchases until the tools arrive or an explicit alternative is selected.
+- Kept the concrete pad and garden transition current for its cured-surface assessment.
+- Recommended the Adirondack garden corner next because it is the highest-readiness project not blocked by the delayed shipment.
+- Updated the 14-day completion summary to none; the August 1 smart-switch replacement remains in project history.
 
 ### 2026-08-27 — Concrete pad poured and curing
 
