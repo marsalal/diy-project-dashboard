@@ -8,9 +8,9 @@ https://marsalal.github.io/diy-project-dashboard/
 
 ## Current focus
 
-- **Current project:** Concrete pad and garden transition
-- **Recommended next project:** Adirondack garden corner
-- **Active projects:** 4
+- **Current project:** Blackout blind chain repair
+- **Recommended next project:** Jacuzzi perimeter joint repair
+- **Active projects:** 8
 - **Recently completed (last 14 days):** None
 
 ## How updates work
@@ -18,6 +18,15 @@ https://marsalal.github.io/diy-project-dashboard/
 The weekly automation reviews the approved DIY planner context. When project content changes, it updates `data/projects.json`, records the change here and in `CHANGELOG.md`, validates the repository, and pushes a new deployment. No deployment commit is created when the dashboard data has not meaningfully changed.
 
 ## Latest changes
+
+### 2026-09-10 — Four household repairs added
+
+- Added the blackout blind chain repair as current after diagnosing a derailed bead chain with the clutch apparently intact.
+- Added the jacuzzi perimeter joint repair as recommended next, using manual removal tools and a loaded-tub sanitary-silicone method that does not depend on the delayed multi-tool.
+- Added the rusted metal door-frame base repair with corrosion removal, substrate inspection, anticorrosive coating, water-source correction, and flexible joint sealing.
+- Added the recurring drywall movement-joint repair with a fastening check that determines flexible-sealant versus paper-tape repair.
+- Re-ranked all eight active projects by recency, moisture or corrosion risk, readiness, dependencies, cost, and impact; the two Milwaukee-dependent projects remain paused.
+- Added current Costa Rica planning-price references for bathroom silicone, rust treatment, anticorrosive coating, and paintable sealant.
 
 ### 2026-09-03 — Milwaukee-dependent projects paused
 

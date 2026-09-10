@@ -2,6 +2,23 @@
 
 All meaningful dashboard changes are recorded here using explicit dates and descriptions.
 
+## 2026-09-10 — Four household repairs added
+
+### Added
+
+- Added the blackout blind chain repair at 35% after photo-based diagnosis found a derailed and tangled bead chain with the clutch apparently intact; made it current and recorded the no-purchase-first re-threading and bench-test sequence.
+- Added the jacuzzi perimeter joint repair at 10% and made it recommended next: remove the entire rigid failing tub-to-tile border manually, clean and dry it, add backer rod only to deep cavities, load the tub, and apply a continuous approximately 5–7 mm white sanitary-silicone joint.
+- Added the rusted metal door-frame base repair at 10%, including corrosion removal, 60–80 and 120-grit preparation, a post-cleaning perforation check, rust treatment, compatible anticorrosive coating, full lower-rail repainting, and flexible metal-to-porcelain sealing after correcting the water source.
+- Added the drywall movement-joint repair at 10%, with a board-movement test determining whether to form a flexible paintable joint or correct fastening and retape the inside corner using paper tape and setting-type compound.
+
+### Changed
+
+- Expanded the active dashboard from four to eight projects and re-ranked them by the newest meaningful activity, moisture or corrosion risk, readiness, blocked dependencies, cost, and impact.
+- Moved the cured concrete-pad assessment to rank five and the Adirondack corner to rank six while preserving their progress, quantities, and cost state.
+- Kept the Milwaukee-router-dependent Guanacaste tables paused at rank seven and the multi-tool-dependent WPC wall paused at rank eight.
+- Added 2026-09-10 Costa Rica planning-price references: bathroom silicone at approximately ₡5.695 per 280 ml cartridge, SUR Corrostop rust converter at ₡6.950 per liter, black matte Corrostyl anticorrosive coating at ₡7.250 per quarter gallon, and paintable flexible sealants around ₡3.895–₡4.395 per 300 ml cartridge.
+- Added quantified task sequences, decision gates, labor, tools, materials, estimated remaining-cost ranges, assumptions, and principal sources for every new repair; dimensions and quantities that require on-site measurement remain explicitly pending.
+
 ## 2026-09-03 — Milwaukee-dependent projects paused
 
 ### Changed
