@@ -8,8 +8,8 @@ https://marsalal.github.io/diy-project-dashboard/
 
 ## Current focus
 
-- **Current project:** Blackout blind chain repair
-- **Recommended next project:** Jacuzzi perimeter joint repair
+- **Current project:** Jacuzzi perimeter joint repair
+- **Recommended next project:** Blackout blind chain repair
 - **Active projects:** 8
 - **Recently completed (last 14 days):** None
 
@@ -18,6 +18,13 @@ https://marsalal.github.io/diy-project-dashboard/
 The weekly automation reviews the approved DIY planner context. When project content changes, it updates `data/projects.json`, records the change here and in `CHANGELOG.md`, validates the repository, and pushes a new deployment. No deployment commit is created when the dashboard data has not meaningfully changed.
 
 ## Latest changes
+
+### 2026-09-17 — Jacuzzi sealant selected
+
+- Made the jacuzzi perimeter joint repair current after the latest in-store material-selection activity and moved the blackout chain repair to recommended next.
+- Identified one cartridge of white Ceys Stop Moho 100% sanitary silicone at approximately ₡4.100 as sufficient for the two photographed sides; purchase remains unconfirmed.
+- Lowered the jacuzzi planning range to ₡4.100–₡15.000 and clarified that backer rod is conditional on exposing cavities approximately 8–10 mm or deeper.
+- Kept progress at 10% because removal, cleaning, sealing, curing, and functional verification have not yet been confirmed.
 
 ### 2026-09-10 — Four household repairs added
 

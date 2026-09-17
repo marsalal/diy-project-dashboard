@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-10",
+  "updatedAt": "2026-09-17",
   "currency": "CRC",
-  "currentProjectId": "blackout-clutch",
-  "nextProjectId": "jacuzzi-joint",
+  "currentProjectId": "jacuzzi-joint",
+  "nextProjectId": "blackout-clutch",
   "completed": [
     {
       "name": "Smart-switch replacement",
@@ -17,7 +17,7 @@
       "name": "Blackout blind chain repair",
       "status": "Chain reinstallation diagnosed; functional test pending",
       "progress": 35,
-      "priority": {"rank":1,"score":96,"roi":"High","complexity":"Low","toolsReady":true,"reasons":["This is the newest meaningful DIY activity","The clutch appears intact and the blind may be restored without buying parts","A careful chain reinstallation and bench test can resolve the immediate loss of blind operation"]},
+      "priority": {"rank":2,"score":93,"roi":"High","complexity":"Low","toolsReady":true,"reasons":["The clutch appears intact and the blind may be restored without buying parts","A careful chain reinstallation and bench test can resolve the immediate loss of blind operation","The newer jacuzzi material-selection activity makes that moisture-sensitive repair current"]},
       "labor": "20–45 min for chain reinstallation and testing; replacement-clutch labor pending only if damage is found",
       "cost": "₡0 if the intact clutch can be re-threaded; replacement cost pending exact PA-38611 compatibility if teeth are damaged",
       "assumption": "Photos indicate that the bead chain came off the clutch sprocket and became tangled rather than the clutch or tube breaking. Do not force or glue the mechanism; confirm operation before reinstalling the roller.",
@@ -29,14 +29,14 @@
     {
       "id": "jacuzzi-joint",
       "name": "Jacuzzi perimeter joint repair",
-      "status": "Planning; full failing tub-to-tile joint identified",
+      "status": "Planning; sanitary silicone selected and removal pending",
       "progress": 10,
-      "priority": {"rank":2,"score":92,"roi":"High","complexity":"Low","toolsReady":true,"reasons":["The rigid failing border can admit moisture and should be replaced with a flexible sanitary joint","The user explicitly added this repair to the dashboard","Manual tools avoid dependence on the delayed Milwaukee multi-tool and reduce risk to the acrylic tub"]},
+      "priority": {"rank":1,"score":97,"roi":"High","complexity":"Low","toolsReady":true,"reasons":["This is the newest meaningful DIY activity, including in-store sanitary-silicone selection","The rigid failing border can admit moisture and should be replaced with a flexible joint","Manual tools avoid dependence on the delayed Milwaukee multi-tool and reduce risk to the acrylic tub"]},
       "labor": "3–5 h for removal, cleaning, masking, and sealing, plus manufacturer-specified cure time with the jacuzzi filled",
-      "cost": "Estimated ₡10.000–₡22.000 remaining, depending on scraper and backer-rod needs",
+      "cost": "Estimated ₡4.100–₡15.000 remaining, depending on whether a scraper, tape, or backer rod is needed",
       "assumption": "Redo the entire joint along the two walls, not the normal tile grout lines. Aim for a continuous approximately 5–7 mm white silicone bead; use backer rod only where the cleaned cavity is too deep for a correctly shaped sealant joint.",
       "nextTasks": ["Test-remove a short section using a utility knife and stiff scraper, keeping metal edges away from the acrylic.","Remove the full failing tub-to-tile border, vacuum it, remove residue, and let the joint dry completely.","Install backer rod only in deep cavities, then fill the jacuzzi to its normal operating level.","Mask both sides, apply one continuous white 100% sanitary silicone bead, tool it smooth, remove tape, and leave the tub filled through the stated cure time."],
-      "materials": [{"item":"White bathroom/kitchen anti-mold silicone","quantity":"1–2 × 280–300 ml cartridges","note":"EPA reference price was ₡5.695 per 280 ml cartridge on 2026-09-10; confirm suitability for acrylic and ceramic."},{"item":"Foam backer rod","quantity":"Length of cavities deeper than approximately 6–8 mm; measure after removal","note":"Do not fill shallow portions unnecessarily."},{"item":"Painter's tape","quantity":"1 roll","note":"Mask both sides for a straight 5–7 mm finished bead."},{"item":"Cleaning supplies","quantity":"1 small set","note":"Vacuum dust, remove residue, and dry completely before sealing."}],
+      "materials": [{"item":"Ceys Stop Moho white 100% sanitary silicone","quantity":"1 cartridge","note":"Identified in store at approximately ₡4.100; one cartridge should be enough for the two photographed sides, but purchase was not confirmed."},{"item":"Foam backer rod","quantity":"Only for cavities approximately 8–10 mm or deeper after removal; 6 mm rod is a provisional size","note":"Do not buy until the old joint is removed unless it is inexpensive and convenient; shallow portions do not need it."},{"item":"Painter's tape","quantity":"1 roll","note":"Mask both sides for a straight 5–7 mm finished bead."},{"item":"Cleaning supplies","quantity":"1 small set","note":"Vacuum dust, remove residue, and dry completely before sealing."}],
       "tools": ["Utility knife with fresh blades","Stiff putty knife or narrow plastic-safe scraper","Manual carbide grout-removal tool for hard material","Shop vacuum","Caulking gun","Gloves and eye protection"],
       "sources": [{"label":"EPA Costa Rica bathroom silicone reference","url":"https://cr.epaenlinea.com/silicon.html"}]
     },

@@ -2,6 +2,17 @@
 
 All meaningful dashboard changes are recorded here using explicit dates and descriptions.
 
+## 2026-09-17 — Jacuzzi sealant selected
+
+### Changed
+
+- Made the jacuzzi perimeter joint repair current based on the latest meaningful DIY activity and made the blackout blind chain repair recommended next.
+- Re-ranked the jacuzzi first and the blackout repair second while preserving all other project ranks, progress estimates, and dependencies.
+- Replaced the provisional one-to-two-cartridge allowance with one cartridge of white Ceys Stop Moho 100% sanitary silicone, identified in store at approximately ₡4.100 and expected to cover the two photographed sides; no purchase was recorded because it was not explicitly confirmed.
+- Revised the jacuzzi remaining-cost estimate from ₡10.000–₡22.000 to ₡4.100–₡15.000 based on the selected sealant and remaining conditional tool, tape, and foam-cord needs.
+- Clarified that foam backer rod is not automatically required: remove the old joint first and use it only where the exposed cavity is approximately 8–10 mm or deeper; a 6 mm cord is provisional if needed.
+- Kept jacuzzi progress at 10% because old-joint removal, cleaning, filling, sealing, curing, and post-cure verification remain unconfirmed.
+
 ## 2026-09-10 — Four household repairs added
 
 ### Added
