@@ -20,7 +20,7 @@ function renderFlowCard(project){
 }
 
 function renderLane(title,items){
-  const content=items.length?items.map(item=>item.completedAt?`<article class="flow-card"><h3>${esc(item.name)}</h3><p>${esc(item.summary)}</p><div class="flow-meta"><span>Completed</span><span>${esc(item.completedAt)}</span></div></article>`:renderFlowCard(item)).join(""):'<p class="empty">Nothing here yet.</p>';
+  const content=items.length?items.map(item=>item.outcome?`<article class="flow-card"><h3>${esc(item.name)}</h3><p>${esc(item.summary)}</p><div class="flow-meta"><span>${esc(item.outcome)}</span><span>${esc(item.closedAt)}</span></div></article>`:renderFlowCard(item)).join(""):'<p class="empty">Nothing here yet.</p>';
   return `<div class="lane"><div class="lane-head"><span>${esc(title)}</span><span>${items.length}</span></div>${content}</div>`;
 }
 
@@ -64,12 +64,13 @@ async function loadDashboard(){
     document.querySelector("#active-count").textContent=`${ranked.length} active projects`;
     document.querySelector("#projects-count").textContent=`${ranked.length} active`;
     document.querySelector("#materials-count").textContent=`${materialsTotal} items`;
-    document.querySelector("#history-count").textContent=`${data.completed.length} completed`;
+    const history=[...data.completed,...data.archived].sort((a,b)=>b.closedAt.localeCompare(a.closedAt));
+    document.querySelector("#history-count").textContent=`${history.length} outcomes`;
     document.querySelector("#focus").innerHTML=`<div><p class="eyebrow">This week’s focus</p><h2>${esc(current.name)}</h2><p>${esc(current.nextTasks[0])}</p><div class="focus-meta"><span>${esc(current.cost)}</span><span>${esc(current.labor)}</span><span>Priority ${current.priority.score}/100</span></div></div><div class="ring" style="--progress:${current.progress}" aria-label="${current.progress}% complete"><span>${current.progress}%</span></div>`;
-    document.querySelector("#project-flow").innerHTML=renderLane("Planned",planned)+renderLane("In progress",inProgress)+renderLane("Completed",data.completed);
+    document.querySelector("#project-flow").innerHTML=renderLane("Planned",planned)+renderLane("In progress",inProgress)+renderLane("Completed",data.completed)+renderLane("Won’t do",data.archived);
     document.querySelector("#project-list").innerHTML=ranked.map(renderProject).join("");
     document.querySelector("#materials-list").innerHTML=renderMaterialRows(ranked);
-    document.querySelector("#history-list").innerHTML=data.completed.length?data.completed.map(item=>`<article class="history-card"><span class="history-check" aria-hidden="true">✓</span><div><h2>${esc(item.name)}</h2><p>${esc(item.summary)}</p></div><time datetime="${esc(item.completedAt)}">${esc(item.completedAt)}</time></article>`).join(""):'<p class="empty">No completed projects recorded yet.</p>';
+    document.querySelector("#history-list").innerHTML=history.length?history.map(item=>`<article class="history-card"><span class="history-check" aria-hidden="true">${item.outcome==="Completed"?"✓":"—"}</span><div><h2>${esc(item.name)}</h2><p><strong>${esc(item.outcome)}.</strong> ${esc(item.summary)}</p></div><time datetime="${esc(item.closedAt)}">${esc(item.closedAt)}</time></article>`).join(""):'<p class="empty">No project outcomes recorded yet.</p>';
     const initial=location.hash.slice(1);if(["overview","projects","materials","history"].includes(initial))showPanel(initial);
   }catch(error){document.querySelector("#load-error").hidden=false;}
 }

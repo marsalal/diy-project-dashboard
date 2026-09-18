@@ -2,6 +2,15 @@
 
 All meaningful dashboard changes are recorded here using explicit dates and descriptions.
 
+## 2026-09-18 — Blind repair completed and garden corner retired
+
+### Changed
+
+- Marked the blackout blind chain repair complete and moved it from active work into project history.
+- Marked the Adirondack garden corner as won’t do and moved it from active work into a distinct archived-history outcome.
+- Re-ranked the six remaining active projects and made the rusted door-frame repair recommended next.
+- Expanded project history and the workflow board to distinguish completed projects from won’t-do outcomes.
+
 ## 2026-09-17 — Jacuzzi sealant selected
 
 ### Changed

@@ -6,6 +6,11 @@ const data=JSON.parse(fs.readFileSync("data/projects.json","utf8"));
 if(data.schemaVersion!==1)throw new Error("Unsupported schemaVersion");
 if(!/^\d{4}-\d{2}-\d{2}$/.test(data.updatedAt))throw new Error("updatedAt must use YYYY-MM-DD");
 if(!Array.isArray(data.projects)||!data.projects.length)throw new Error("At least one active project is required");
+if(!Array.isArray(data.completed)||!Array.isArray(data.archived))throw new Error("Completed and archived histories must be arrays");
+for(const item of [...data.completed,...data.archived]){
+  for(const field of ["name","outcome","closedAt","summary"]){if(!item[field])throw new Error(`History item missing ${field}`)}
+  if(!/^\d{4}-\d{2}-\d{2}$/.test(item.closedAt))throw new Error(`${item.name} closedAt must use YYYY-MM-DD`);
+}
 const ids=new Set();
 for(const project of data.projects){
   for(const field of ["id","name","status","labor","cost","assumption"]){if(!project[field])throw new Error(`${project.id||"project"} missing ${field}`)}
@@ -35,4 +40,4 @@ for(const project of data.projects){
 if(new Set(data.projects.map(project=>project.priority.rank)).size!==data.projects.length)throw new Error("Priority ranks must be unique");
 if(!ids.has(data.currentProjectId)||!ids.has(data.nextProjectId))throw new Error("Current and next project IDs must reference active projects");
 for(const file of requiredFiles.filter(file=>!file.endsWith(".json"))){const content=fs.readFileSync(file,"utf8");for(const pattern of forbiddenPatterns){if(pattern.test(content))throw new Error(`Potential private data or secret detected in ${file}`)}}
-console.log(`Validated ${data.projects.length} active projects and ${data.completed.length} completed projects.`);
+console.log(`Validated ${data.projects.length} active projects, ${data.completed.length} completed projects, and ${data.archived.length} archived projects.`);
