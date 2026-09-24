@@ -8,16 +8,24 @@ https://marsalal.github.io/diy-project-dashboard/
 
 ## Current focus
 
-- **Current project:** Jacuzzi perimeter joint repair
-- **Recommended next project:** Blackout blind chain repair
-- **Active projects:** 8
-- **Recently completed (last 14 days):** None
+- **Current project:** Cement wall hole repair
+- **Recommended next project:** Concrete pad drainage correction
+- **Active projects:** 7
+- **Recently completed (last 14 days):** Blackout blind chain repair
 
 ## How updates work
 
 The weekly automation reviews the approved DIY planner context. When project content changes, it updates `data/projects.json`, records the change here and in `CHANGELOG.md`, validates the repository, and pushes a new deployment. No deployment commit is created when the dashboard data has not meaningfully changed.
 
 ## Latest changes
+
+### 2026-09-24 — Wall holes added and pad drainage diagnosed
+
+- Added the cement wall hole repair as current, with hole count, depth, substrate condition, and any retained anchors explicitly pending measurement.
+- Recorded the concrete pad's almost-one-month cured condition and localized upper-right ponding, raised progress to 87%, and made its drainage correction recommended next.
+- Added the 1–2% target drainage slope and thickness-based repair decision: 3–10 mm, 10–30 mm, or greater than 30 mm.
+- Warned against applying a thin conventional cement-and-sand skim to cured concrete and deferred material quantity until the depression is mapped.
+- Synchronized the Current focus section with the September 18 history update: the blackout repair is completed and the Adirondack project is archived as won't do.
 
 ### 2026-09-17 — Jacuzzi sealant selected
 

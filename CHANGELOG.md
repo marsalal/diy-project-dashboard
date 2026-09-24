@@ -2,6 +2,24 @@
 
 All meaningful dashboard changes are recorded here using explicit dates and descriptions.
 
+## 2026-09-24 — Wall holes added and pad drainage diagnosed
+
+### Added
+
+- Added the cement wall hole repair at 5% and made it current based on the newest meaningful DIY activity.
+- Added a measurement-first plan covering hole count, width, depth, retained anchors, loose substrate, and moisture before selecting concrete repair putty or a non-sag cement repair mortar.
+- Added an estimated ₡2.500–₡10.000 remaining range and 1–3 h labor range, with primer and matching paint quantities pending the measured repair area.
+- Added current Costa Rica references for 0,946 L concrete repair putty at ₡6.750 and a 5 kg mortar reference at ₡2.495; product suitability still depends on hole depth.
+
+### Changed
+
+- Updated the concrete pad from curing at 85% to cured with localized upper-right ponding at 87% and made its drainage correction recommended next.
+- Replaced the general surface assessment with a straightedge-and-level measurement targeting a deliberate 1–2% drainage slope, approximately 1–2 cm fall per meter.
+- Added thickness-based repair gates: exterior repair or resurfacing mortar for approximately 3–10 mm or 10–30 mm, and a thicker aggregate-bearing system above 30 mm.
+- Explicitly rejected a thin conventional cement-and-sand skim over cured concrete because of adhesion, cracking, and disintegration risk.
+- Re-ranked the jacuzzi joint third, rusted frame fourth, drywall joint fifth, paused Guanacaste tables sixth, and paused WPC wall seventh without changing their progress or underlying plans.
+- Corrected README.md's stale Current focus section to reflect the September 18 blackout completion and Adirondack won't-do archive, seven current active projects, and the new current and next projects.
+
 ## 2026-09-18 — Blind repair completed and garden corner retired
 
 ### Changed

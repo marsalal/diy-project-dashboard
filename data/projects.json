@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-18",
+  "updatedAt": "2026-09-24",
   "currency": "CRC",
-  "currentProjectId": "jacuzzi-joint",
-  "nextProjectId": "rusted-door-frame",
+  "currentProjectId": "cement-wall-holes",
+  "nextProjectId": "concrete-pad",
   "completed": [
     {
       "name": "Smart-switch replacement",
@@ -20,18 +20,55 @@
   ],
   "projects": [
     {
+      "id": "cement-wall-holes",
+      "name": "Cement wall hole repair",
+      "status": "New repair; hole dimensions and substrate condition pending",
+      "progress": 5,
+      "priority": {
+        "rank": 1,
+        "score": 94,
+        "roi": "High",
+        "complexity": "Low",
+        "toolsReady": true,
+        "reasons": [
+          "This is the newest meaningful DIY activity",
+          "Small cement-wall holes are normally a quick, low-cost repair once depth and sound edges are confirmed",
+          "Measuring and cleaning the holes prevents choosing an unsuitable cosmetic filler for a deeper repair"
+        ]
+      },
+      "labor": "Estimated 1–3 h over preparation, filling, finishing, and touch-up visits, plus product drying time",
+      "cost": "Estimated ₡2.500–₡10.000 remaining, depending on hole depth, repair material, primer, and matching paint already on hand",
+      "assumption": "The photo confirms holes in a cementitious wall but does not provide scale, count, depth, moisture condition, or whether any anchor remains. Select material only after measuring and removing loose edges; deeper or structural damage requires reassessment.",
+      "nextTasks": [
+        "Count the holes and measure each opening's width and maximum depth; confirm whether anchors, screws, loose render, or moisture are present.",
+        "Remove loose material, vacuum dust, and lightly dampen only if the selected cementitious repair product requires it.",
+        "Choose concrete repair putty for shallow cosmetic voids or a compatible non-sag cement repair mortar for deeper holes, following its thickness limits.",
+        "Fill in controlled lifts if required, finish flush, allow full cure, then spot-prime and match the wall paint."
+      ],
+      "materials": [
+        {"item":"Concrete repair filler or mortar","quantity":"One small container or 5 kg bag after measuring","note":"EPA listed 0.946 L concrete repair putty at ₡6.750 and 5 kg Bondex mortar at ₡2.495 on 2026-09-24; confirm suitability for the measured depth."},
+        {"item":"Primer and matching wall paint","quantity":"Touch-up amount pending repaired area","note":"Use only after the repair material has cured as specified."},
+        {"item":"Cleaning water and cloths","quantity":"Small amount","note":"Remove dust and residue without saturating the wall."}
+      ],
+      "tools": ["Tape or ruler and flashlight","Scraper or narrow chisel used gently","Shop vacuum or stiff brush","Small margin trowel or putty knife","Sanding block and PPE"],
+      "sources": [
+        {"label":"EPA Costa Rica concrete repair putty reference","url":"https://cr.epaenlinea.com/masilla-para-concreto-gris-14-gal.html"},
+        {"label":"EPA Costa Rica 5 kg mortar reference","url":"https://cr.epaenlinea.com/mortero-bondex-5-kg.html"}
+      ]
+    },
+    {
       "id": "jacuzzi-joint",
       "name": "Jacuzzi perimeter joint repair",
       "status": "Planning; sanitary silicone selected and removal pending",
       "progress": 10,
       "priority": {
-        "rank": 1,
-        "score": 97,
+        "rank": 3,
+        "score": 88,
         "roi": "High",
         "complexity": "Low",
         "toolsReady": true,
         "reasons": [
-          "This is the newest meaningful DIY activity, including in-store sanitary-silicone selection",
+          "The sanitary silicone selection makes this repair ready once manual removal begins",
           "The rigid failing border can admit moisture and should be replaced with a flexible joint",
           "Manual tools avoid dependence on the delayed Milwaukee multi-tool and reduce risk to the acrylic tub"
         ]
@@ -88,8 +125,8 @@
       "status": "Assessment and surface preparation planned",
       "progress": 10,
       "priority": {
-        "rank": 2,
-        "score": 86,
+        "rank": 4,
+        "score": 84,
         "roi": "High",
         "complexity": "Medium",
         "toolsReady": true,
@@ -159,8 +196,8 @@
       "status": "Diagnosis complete; movement check pending",
       "progress": 10,
       "priority": {
-        "rank": 3,
-        "score": 78,
+        "rank": 5,
+        "score": 76,
         "roi": "Medium",
         "complexity": "Medium",
         "toolsReady": true,
@@ -224,22 +261,22 @@
     {
       "id": "concrete-pad",
       "name": "Concrete pad & garden transition",
-      "status": "Poured and curing; surface assessment pending",
-      "progress": 85,
+      "status": "Cured; localized upper-right ponding requires slope measurement",
+      "progress": 87,
       "priority": {
-        "rank": 4,
-        "score": 74,
+        "rank": 2,
+        "score": 92,
         "roi": "High",
         "complexity": "High",
         "toolsReady": true,
         "reasons": [
-          "The approximately 0.29 m³ slab has been poured and now awaits a cured-surface assessment",
-          "Correct diagnosis protects the completed structural work",
-          "No newer measurement confirms whether surface repair is warranted"
+          "After almost one month of curing the slab appears structurally sound, but localized ponding is confirmed at the upper-right area",
+          "A straightedge and level measurement is the next low-cost decision gate before buying repair mortar",
+          "Restoring a deliberate 1–2% drainage slope has higher impact than cosmetic work"
         ]
       },
-      "labor": "Brief moisture checks during curing; 1–2 h to remove forms and assess the cured slab; any surface repair is pending diagnosis; 4–8 additional h for steps",
-      "cost": "₡0 additional cost committed; surface repair and step costs remain pending measurement",
+      "labor": "30–60 min to map the ponding depth and drainage direction; localized surface preparation and repair labor pending area and thickness; 4–8 additional h for steps",
+      "cost": "₡0 additional cost committed; localized repair quantity and step costs remain pending measurement",
       "expenseReport": {
         "status": "Pour expenses finalized — repair costs not yet assessed",
         "finalizedAt": "2026-08-21",
@@ -324,13 +361,13 @@
           }
         ]
       },
-      "assumption": "The 1.90 × 1.52 × 0.10 m pad (2.89 m²; approximately 0.289 m³) was poured by hand in batches. The slab appeared generally filled and reasonably level, but the fresh surface finish was irregular and shed loose grains when worked late. Allow it to cure before deciding among no repair, localized correction, or resurfacing. Step quantities remain pending until the 3.80 m transition's vertical rise is measured.",
+      "assumption": "The 1.90 × 1.52 × 0.10 m pad (2.89 m²; approximately 0.289 m³) has cured for almost one month and appears structurally sound in the latest photo. Water ponds mainly in the upper-right area. Do not apply a thin conventional cement-and-sand skim: measure the depression and create a deliberate 1–2% drainage slope with an exterior repair system rated for the actual 3–10 mm, 10–30 mm, or greater-than-30 mm thickness. Step quantities remain pending until the 3.80 m transition's vertical rise is measured.",
       "nextTasks": [
-        "Keep the slab moist and covered during the initial cure without disturbing the surface.",
-        "After curing, remove the forms and inspect surface hardness, loose material, flatness, drainage, edges, and any cracks.",
-        "Use a long straightedge and localized scratch checks to classify the finish as acceptable, locally repairable, or needing a compatible resurfacing system.",
-        "Do not buy or apply repair material until the cured surface condition and repair depth are measured.",
-        "Avoid early wheelbarrow loading and retain the surplus aggregate and cement for measured follow-up work.",
+        "Place a long straightedge from the high area toward the upper-right ponding zone and use a level to define a 1–2% drainage slope, or approximately 1–2 cm fall per meter.",
+        "Measure the maximum gap below the straightedge and map the affected area after water has drained.",
+        "Remove all loose or powdery surface material and clean back to a sound substrate before selecting a repair system.",
+        "Choose an exterior repair or resurfacing mortar rated for the measured thickness: approximately 3–10 mm, 10–30 mm, or a thicker aggregate-bearing repair above 30 mm.",
+        "Do not use a thin conventional cement-and-sand skim over cured concrete because adhesion and cracking risk are high.",
         "Measure the vertical rise across the 3.80 m transition and choose poured or precast steps after inventorying leftovers."
       ],
       "materials": [
@@ -419,7 +456,7 @@
       "status": "Paused — Milwaukee router shipment held indefinitely",
       "progress": 40,
       "priority": {
-        "rank": 5,
+        "rank": 6,
         "score": 50,
         "roi": "High",
         "complexity": "Medium",
@@ -514,7 +551,7 @@
       "status": "Paused — Milwaukee multi-tool shipment held indefinitely",
       "progress": 15,
       "priority": {
-        "rank": 6,
+        "rank": 7,
         "score": 44,
         "roi": "Medium",
         "complexity": "Medium",
