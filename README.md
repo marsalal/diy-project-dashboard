@@ -19,6 +19,14 @@ The weekly automation reviews the approved DIY planner context. When project con
 
 ## Latest changes
 
+### 2026-10-01 — Wall penetrations filled and ready for finishing
+
+- Confirmed both openings as abandoned A/C penetrations and recorded the completed polyurethane-foam backing and cementitious surface fill.
+- Raised the cement wall repair from 5% to 75%; only drying, flatness evaluation, optional fine leveling, 180–220 grit sanding, primer, texture matching, and paint remain.
+- Added the roller decision: Atlas AntiGota 10 mm for a smoother wall or 13 mm for light render texture; avoid 19 mm.
+- Reduced remaining labor to 45–120 minutes plus drying and narrowed remaining cost to ₡0–₡10.000 depending on supplies already on hand.
+- Kept the concrete pad drainage correction recommended next and the September 18 blackout repair in the 14-day completion panel.
+
 ### 2026-09-24 — Wall holes added and pad drainage diagnosed
 
 - Added the cement wall hole repair as current, with hole count, depth, substrate condition, and any retained anchors explicitly pending measurement.

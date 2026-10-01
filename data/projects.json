@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-24",
+  "updatedAt": "2026-10-01",
   "currency": "CRC",
   "currentProjectId": "cement-wall-holes",
   "nextProjectId": "concrete-pad",
@@ -22,8 +22,8 @@
     {
       "id": "cement-wall-holes",
       "name": "Cement wall hole repair",
-      "status": "New repair; hole dimensions and substrate condition pending",
-      "progress": 5,
+      "status": "Both abandoned A/C penetrations filled; drying and finish work pending",
+      "progress": 75,
       "priority": {
         "rank": 1,
         "score": 94,
@@ -32,25 +32,27 @@
         "toolsReady": true,
         "reasons": [
           "This is the newest meaningful DIY activity",
-          "Small cement-wall holes are normally a quick, low-cost repair once depth and sound edges are confirmed",
-          "Measuring and cleaning the holes prevents choosing an unsuitable cosmetic filler for a deeper repair"
+          "Both abandoned A/C penetrations have been foam-backed and covered with cementitious repair material",
+          "Only drying, surface evaluation, light finishing, primer, texture matching, and paint remain"
         ]
       },
-      "labor": "Estimated 1–3 h over preparation, filling, finishing, and touch-up visits, plus product drying time",
-      "cost": "Estimated ₡2.500–₡10.000 remaining, depending on hole depth, repair material, primer, and matching paint already on hand",
-      "assumption": "The photo confirms holes in a cementitious wall but does not provide scale, count, depth, moisture condition, or whether any anchor remains. Select material only after measuring and removing loose edges; deeper or structural damage requires reassessment.",
+      "labor": "Estimated 45–120 min remaining for dry-surface evaluation, optional skim, sanding, primer, texture matching, and paint, plus drying time",
+      "cost": "Estimated ₡0–₡10.000 remaining, depending on whether primer, matching paint, sandpaper, or the selected roller must still be purchased",
+      "assumption": "The two openings were confirmed as abandoned A/C penetrations installed by another route. Both were closed with expanding polyurethane foam, trimmed approximately 5–8 mm below the wall face, and covered with cementitious repair material. The latest photos show the fill approximately flush while still wet; final flatness and any fine second coat must be judged only after drying.",
       "nextTasks": [
-        "Count the holes and measure each opening's width and maximum depth; confirm whether anchors, screws, loose render, or moisture are present.",
-        "Remove loose material, vacuum dust, and lightly dampen only if the selected cementitious repair product requires it.",
-        "Choose concrete repair putty for shallow cosmetic voids or a compatible non-sag cement repair mortar for deeper holes, following its thickness limits.",
-        "Fill in controlled lifts if required, finish flush, allow full cure, then spot-prime and match the wall paint."
+        "Let both cementitious patches dry fully without further tooling while wet.",
+        "Run a hand across each dry patch; sand ridges and trowel marks lightly with 180–220 grit, feathering the edges into the existing wall.",
+        "Apply one very thin leveling coat only where a dry patch remains recessed, then cure and sand again.",
+        "Prime the repaired areas, reproduce the wall's fine roller texture, and repaint; use an Atlas AntiGota 10 mm cover for a smoother wall or a 13 mm cover for light render texture."
       ],
       "materials": [
-        {"item":"Concrete repair filler or mortar","quantity":"One small container or 5 kg bag after measuring","note":"EPA listed 0.946 L concrete repair putty at ₡6.750 and 5 kg Bondex mortar at ₡2.495 on 2026-09-24; confirm suitability for the measured depth."},
-        {"item":"Primer and matching wall paint","quantity":"Touch-up amount pending repaired area","note":"Use only after the repair material has cured as specified."},
-        {"item":"Cleaning water and cloths","quantity":"Small amount","note":"Remove dust and residue without saturating the wall."}
+        {"item":"Sanco Poly-Foam expanding polyurethane foam","quantity":"Applied to both abandoned A/C penetrations","note":"Used as backing and air, moisture, and insect closure; trimmed 5–8 mm below the finished wall surface."},
+        {"item":"Cementitious repair mortar or fine render","quantity":"Applied over both foam-backed openings","note":"Latest photos show complete coverage approximately flush with the wall; allow it to dry before deciding on a second skim."},
+        {"item":"180–220 grit sandpaper","quantity":"1–2 sheets or equivalent","note":"Use lightly only after full drying to remove ridges and feather patch edges."},
+        {"item":"Primer and matching wall paint","quantity":"Touch-up amount for two patches","note":"Apply primer after the cementitious repair is dry and finish with the wall's existing fine roller texture."},
+        {"item":"Roller cover","quantity":"1 × 9 in if not already available","note":"Atlas AntiGota 10 mm for a smoother wall; 13 mm cover for light texture. Avoid 19 mm because it leaves excessive texture."}
       ],
-      "tools": ["Tape or ruler and flashlight","Scraper or narrow chisel used gently","Shop vacuum or stiff brush","Small margin trowel or putty knife","Sanding block and PPE"],
+      "tools": ["Sanding block","Putty knife for an optional fine leveling coat","Paint tray and 9 in roller frame","Atlas AntiGota 10 mm or 13 mm roller cover matched to the wall texture","Brush for cut-in and PPE"],
       "sources": [
         {"label":"EPA Costa Rica concrete repair putty reference","url":"https://cr.epaenlinea.com/masilla-para-concreto-gris-14-gal.html"},
         {"label":"EPA Costa Rica 5 kg mortar reference","url":"https://cr.epaenlinea.com/mortero-bondex-5-kg.html"}

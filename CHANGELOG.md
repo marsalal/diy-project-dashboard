@@ -2,6 +2,18 @@
 
 All meaningful dashboard changes are recorded here using explicit dates and descriptions.
 
+## 2026-10-01 — Wall penetrations filled and ready for finishing
+
+### Changed
+
+- Confirmed that the two wall openings were abandoned A/C penetrations and recorded that both were backed with Sanco Poly-Foam expanding polyurethane foam.
+- Recorded that the cured foam was trimmed approximately 5–8 mm below the wall face and both openings were covered with cementitious repair material approximately flush with the existing wall.
+- Raised cement wall repair progress from 5% to 75% and changed its status from measurement pending to drying and finish work pending.
+- Replaced the measurement and filling plan with the remaining sequence: dry fully, hand-check flatness, sand ridges and trowel marks with 180–220 grit, apply a thin second coat only to recesses, prime, match the existing roller texture, and repaint.
+- Reduced remaining labor from 1–3 h to 45–120 min plus drying and revised remaining cost from ₡2.500–₡10.000 to ₡0–₡10.000 depending on primer, paint, sandpaper, and roller supplies already available.
+- Added a 9 in Atlas AntiGota 10 mm roller cover for smoother walls or a 13 mm cover for light render texture, and explicitly excluded the 19 mm cover because it would leave excessive texture.
+- Preserved the cement wall repair as current, the concrete pad drainage correction as recommended next, and the blackout repair completion in the 14-day window.
+
 ## 2026-09-24 — Wall holes added and pad drainage diagnosed
 
 ### Added
